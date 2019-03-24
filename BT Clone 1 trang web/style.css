@@ -1,0 +1,146 @@
+body {
+    overflow-y: scroll;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+body {
+    background: #fff;
+    color: #1d2129;
+    direction: ltr;
+    line-height: 1.34;
+    margin: 0;
+    padding: 0;
+    unicode-bidi: embed;
+}
+body[Attributes Style] {
+    direction: ltr;
+    unicode-bidi: isolate;
+}
+body {
+    display: block;
+
+}
+.banner {
+    background-color: #3b5998;
+    background-image: linear-gradient(#4e69a2, #3b5998 50%);
+    border-bottom: 1px solid #133783;
+    min-height: 42px;
+    position: relative;
+    z-index: 1;
+    height: 82px;
+    min-width: 980px;
+    margin: 0px;
+}
+.loggedout_menubar{
+    margin: 0 auto;
+    padding-top: 13px;
+    width: 980px;
+    height: 65px;
+}
+.font-logo{
+    float: left;
+    height: 55px;
+}
+.loggedout_menubar .fb_logo {
+    margin-top: 17px;}
+.logo{
+    margin-top: 17px;
+}
+.menu_login .html7magic {
+    padding-bottom: 4px;
+}
+
+table{
+    float: right;
+}
+.menu_login table tr td 
+{
+    padding: 0 0 0 14px;
+}
+.menu_login .html7magic label 
+{
+    color: #fff;
+    font-weight: normal;
+    padding-left: 1px;
+}
+label {
+    color: #666;
+    cursor: default;
+    font-weight: 600;
+    vertical-align: middle;
+    }
+.menu_login #email {
+    direction: ltr;
+}
+
+.menu_login .inputtext, .menu_login .inputpassword {
+    border-color: #1d2a5b;
+    margin: 0;
+    width: 142px;
+}
+.inputtext, .inputpassword .login_form_label_field {
+    padding-bottom: 4px;
+}
+textarea, .inputtext, .inputpassword {
+    border: 1px solid #bdc7d8;
+    margin: 0;
+    padding: 3px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+.uiButton, .uiButtonSuppressed:active, .uiButtonSuppressed:focus, .uiButtonSuppressed:hover {
+    background-color: #f5f6f7;
+    border: 1px solid #ccd0d5;
+}
+.uiButtonConfirm {
+    background-color: #4267b2;
+    border-color: #29487d;
+}
+.uiButton {
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    line-height: 18px;
+    padding: 2px 6px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    vertical-align: top;
+    white-space: nowrap;
+}
+.uiButtonText, .uiButton input {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    color: white;
+}
+.login_form_label_field a {
+    color: #9cb4d8;
+    font-weight: normal;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+ }
+ .fogotacount {
+    padding-top: 4px;
+ }
+ #globalContainer {
+    margin: 0 auto;
+    position: relative;
+    zoom: 1;
+}

@@ -1,0 +1,133 @@
+#globalContainer {
+    margin: 0 auto;
+    position: relative;
+    zoom: 1;
+}
+.clearfix{
+	margin: 0 auto;
+    width: 980px;
+    height: 603.281px;
+}
+.lfloat{
+	float: left;
+}
+.message{
+    margin-right: 15px;
+    width: 565px;
+}
+.message_a{
+   color: #0e385f;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 29px;
+    margin-top: 40px;
+    width: 450px;
+    word-spacing: -1px;
+}
+.rfloat{
+	width: 400px;
+	height: 603.281px;
+	float: right;
+}
+.pvl{   
+	 padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.dangky{
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+.fsm{
+    font-weight: normal;
+    color: #1d2129;
+    font-size: 19px;
+}
+
+#fullname_field{
+	width: 400px;
+	height: 49px;
+}
+
+._58mh {
+    width: 399px;
+    height: 49px;
+}
+.clearfix {
+    zoom: 1;
+}
+._a4y {
+    display: inline-block;
+    position: relative;
+}
+._3-90 {
+    margin-right: 8px;
+}
+._ohe {
+    float: left;
+}
+
+.mbm {
+	height: 39px;
+	width: 194px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+.lfloat {
+    float: left;
+}
+._5dbb {
+    position: relative;
+    height: 39px;
+	width: 194px;
+}
+._58mh .uiStickyPlaceholderInput {
+    width: 194px;
+}
+._58mf .uiStickyPlaceholderInput {
+    background: white;
+    border-radius: 5px;
+    width: 399px;
+}
+.uiStickyPlaceholderInput {
+    display: inline-block;
+    position: relative;
+}
+._58mf ._58mg, ._58mf .uiStickyPlaceholderInput .placeholder {
+    font-size: 18px;
+    padding: 8px 10px;
+}
+
+._58mf .uiStickyPlaceholderInput .placeholder {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-left: 11px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+div.uiStickyPlaceholderEmptyInput .placeholder {
+    display: block;
+     width: 194px;
+    height: 39px;
+}
+.uiStickyPlaceholderInput .placeholder {
+    color: #999;
+    cursor: text;
+    display: none;
+    height: 100%;
+    left: 0;
+    padding: 4px 0 0 5px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.placeholder {
+    background: white;
+    border-radius: 5px;
+    width: 194px;
+
+    font-size: 18px;
+}
+
+}
