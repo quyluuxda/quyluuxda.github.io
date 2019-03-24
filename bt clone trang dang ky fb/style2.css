@@ -80,7 +80,7 @@
 ._5dbb {
     position: relative;
     height: 39px;
-	width: 194px;
+    width: 194px;
 }
 ._58mh .uiStickyPlaceholderInput {
     width: 194px;
@@ -117,17 +117,117 @@ div.uiStickyPlaceholderEmptyInput .placeholder {
     display: none;
     height: 100%;
     left: 0;
-    padding: 4px 0 0 5px;
     position: absolute;
     top: 0;
     width: 100%;
 }
-.placeholder {
+
+div.placeholder{
+        font-size: 18px;
+    padding: 8px 10px;
+    box-sizing: border-box;
+        height: 39px;
+    width: 194px;
+}
+input#u_0_j.inputtext{
+        border: 1px solid #bdc7d8;
+        border-radius: 5px;
+    margin: 0;
+        font-size: 18px;
+    padding: 8px 10px;
+        width: 172px;
+}
+
+input#u_0_l.inputtext{
+        border: 1px solid #bdc7d8;
+        border-radius: 5px;
+    margin: 0;
+        font-size: 18px;
+    padding: 8px 10px;
+        width: 172px;
+}
+._a4y {
+    display: inline-block;
+    position: relative;
+}
+
+.mbm {
+    margin-bottom: 10px;
+}
+._5dbb {
+    position: relative;
+}
+._58mf .uiStickyPlaceholderInput {
     background: white;
     border-radius: 5px;
-    width: 194px;
+    width: 399px;
+}
 
+.uiStickyPlaceholderInput {
+    display: inline-block;
+    position: relative;
+}
+div.placeholder1{
+        font-size: 18px;
+    padding: 8px 10px;
+    box-sizing: border-box;
+        height: 39px;
+    width: 399px;
+    border: 1px solid #bdc7d8;
+        border-radius: 5px;
+        color: #999;
+}
+div.placeholder2{
+        font-size: 18px;
+    padding: 8px 10px;
+    box-sizing: border-box;
+        height: 39px;
+    width: 399px;
+    border: 1px solid #bdc7d8;
+        border-radius: 5px;
+        color: #999;
+}
+._2_68 {
+    color: #1d2129;
     font-size: 18px;
+    font-weight: normal;
 }
 
+.mbs {
+    margin-bottom: 5px;
 }
+.mtm {
+    margin-top: 10px;
+}
+._5k_5 {
+    position: relative;
+}
+
+._5k_4 {
+    display: inline-block;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+._58ms {
+    font-size: 11px;
+    max-width: 150px;
+}
+._58ms {
+    display: inline-block;
+  width: 150px;
+    vertical-align: middle;
+
+}
+.mlm {
+    margin-left: 10px;
+
+}
+a {
+    color: #365899;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
