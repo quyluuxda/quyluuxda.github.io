@@ -44,3 +44,23 @@ ul {
     border-width: 0 0 0 1px;
     display: inline-block;
 }
+#contentCurve {
+    border-bottom: 1px solid #dddfe2;
+    font-size: 1px;
+    height: 8px;
+    margin-bottom: 8px;
+}
+.pageFooterLinkList {
+    line-height: 1.6;
+}
+.muc{
+	padding-left: 18px;
+}
+.copyright {
+    font-size: 11px;
+}
+
+.mvl {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
