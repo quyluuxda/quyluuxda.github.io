@@ -1,11 +1,171 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-	<title>CSS Layout 1</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+	<head>
+		<title>CSS Layout 1</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<header class="site-nav">
+			<nav class="nav-bar">
+				<div>
+					<img class="logo" src="img/logo.png">
+					<ul style="display: inline;" class="menu">
+						<li><a href="">Trang chủ</a></li>
+						<li><a href="">Khóa học</a></li>
+						<li><a href="">Lịch khai giảng</a></li>
+						<li><a href="">Q & A</a></li>
+						<li><a href="">Blog</a></li>
+						<li><a href="">Việc làm</a></li>
+						<li><a href="">Phỏng vấn</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="container">
+				<ul itemscope itemtype="http://schema.org/BreadcrumbList">
+  					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      					<a itemprop="item" href="https://example.com/dresses">
+      					<span itemprop="name">Trang chủ  ></span>
+      					</a>
+    					<meta itemprop="position" content="1" />
+    				</li>
+    				<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      					<a itemprop="item" href="https://example.com/dresses/real">
+   						<span itemprop="name">Khóa học  ></span></a>
+    					<meta itemprop="position" content="2" />
+    				</li>
+    				<li class="active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      					<a itemprop="item" href="https://example.com/dresses/real">
+   						<span itemprop="name">Lập trình Java căn bản - nâng cao</span></a>
+    					<meta itemprop="position" content="3" />
+    				</li>	
+    			</ul>
+  			</div>
+  			<div class="content">
+  				<div class="row">
+  					<div class="column1">
+  						<article class="course-benefit">
+  							<h3 class="course-benefit-tittle">Giới thiệu</h3>
+  							<p>Khóa học&nbsp;lập trình&nbsp;Java cơ bản. Mỗi bài học là một ví dụ cụ thể. Học viên có toàn bộ mã nguồn và được hướng dẫn từng bước để thực hiện. Học viên đăng ký học được xem học liệu vĩnh viễn. Khóa học liên tục được cập nhật bài giảng mới, công nghệ mới khi cần thiết.</p>
+  							<h3>7 điểm nổi bật của khoá học:</h3>
+  							<ul>
+								<li>Video chất lượng cao, mã nguồn minh hoạ được kiểm thử có trắc nghiệm để sinh viên tự kiểm tra kiến thức. Xem vĩnh viễn !</li>
+								<li>Nhiều video bonus nâng cao, liên tục cập nhất hàng tháng. (khoá học khác được làm từ 2015 !)</li>
+								<li>Cập nhật tính năng mới nhất của Java 8, 9, 10: Lambda Expression, JShell, Interface API (các khoá học Java trên mạng chỉ cập nhật đến Java 6 hoặc 7)</li>
+								<li>Dạy lập trình hướng đối tượng kỹ và dễ hiểu, nhiều ví dụ minh hoạ</li>
+								<li>Dạy cả Design Pattern. (Các khoá học khác không dạy !)</li>
+								<li>Có video hướng dẫn lập trình giao diện Java FX (form, vẽ đồ thị). Rất cần cho sinh viên làm đồ án tốt nghiệp</li>
+								<li>Hướng dẫn lập trình kết nối cơ sở dữ liệu MySQL, JDBC. Rất cần để học lên lập trình Java Spring</li>
+							</ul>
+							<h3>Giảng viên:</h3>
+							<p>Nguyễn Đức Hoàng: 11 năm phát triển phần mềm, hiện đang tự phát triển kênh youtube chia sẻ kiến thức lập trình với hơn 700 videos (giảng bằng tiếng Anh và tiếng Việt).</p>
+							<p>Lớp Java được đào tạo dưới 2 mô hình : Lớp học trực tuyến đăng ký ngay xem video bài giảng và lớp học phòng lab học trực tiếp tại trung tâm Techmaster. (<span class="marker" style="background-color:#ff0"> Lưu ý</span> : Nội dung lớp học onlab học thực hành, ví dụ trực quan và vận dụng thực tế. Đảm bảo kiến thức nền tảng sau mỗi khóa học)</p>
+							<p>Link group facebook:</p>
+							<p>https://www.facebook.com/groups/554817598286642</p>
+							<iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/n7ixctJuzR0" width="560"></iframe>
+							<h3>Phương pháp học</h3>
+							<p>Học viên có tài khoản riêng để truy cập vào hệ thống đào tạo trực tuyến của Techmaster. Khóa học có nhiều section, mỗi section có nhiều lesson là một video khoảng 7-15 phút hướng dẫn thực hành. Sau mỗi video là 4-5 câu hỏi quiz. Các lesson về sau thường là bài tập lập trình: hoàn thiện một ứng dụng cụ thể, hoặc fix lỗi các đoạn code cụ thể để rèn luyện tư duy đọc mã nguồn của học viên.</p>
+  						</article>
+  					</div>
+  					<div class="column2">
+  						<aside class="infor">
+  							<h3 class="infor-tittle">Học phí</h3>
+  							<b id="value">500,000 VND</b>
+  						</aside><br>
+  					</div>
+  					<div class="column2_1">	
+  						<aside class="infor">
+  							<h3 class="infor-tittle">Giảng viên</h3>
+  							<div>
+  								<div>
+  								<a class="picture_author" href="" target="_blank"> <img src="img/duchoang.png" style="width: 75px;margin-bottom: 1em;"></a>
+  								</div>
+  								<div>
+  									<p class="name_author">Nguyễn Đức Hoàng<p>
+  								</div><br>
+  							</div>	
+  							<div class="message">
+  								<p>Mình tên là Hoàng, có 11 năm kinh nghiệm trong lĩnh vực lập trình app, mobile. Hiện tại mình tham gia dạy lập trình với mục đích chia sẻ và tự học hỏi thêm kiến thức, giúp các bạn trẻ tiếp cận nhanh với công nghệ mới, kiến thức cập nhật trong lĩnh vực lập trình. Các bạn có thể theo dõi kênh của mình tại đây: http://youtube.com/c/nguyenduchoang</p>
+  							</div><br>
+  							<div>
+  								<div>
+  								<a class="picture_author" href="" target="_blank"> <img src="img/phanhai.png" style="width: 75px;margin-bottom: 1em;"></a>
+  								</div>
+  								<div>
+  									<p class="name_author">Ngô Phan Hải<p>
+  								</div><br>
+  							</div>	
+  							<div class="message">
+  								<p>Lập trình viên 10 năm kinh nghiệm. Trưởng nhóm công nghệ di động công ty Misa Từng công tác tại Tinh Van, Vietsoft International. Giảng viên lớp iOS, Java</p>
+  							</div>
+  						</aside>
+  					</div>
+  				</div>
+  			</div>
+		</main>	
+		<footer>
+			<div class="content_footer">
+				<div class="footer_column1">
+					<h3>Chủ sở hữu website</h3>
+					<ul class="list-unstyled nav-list">
+                        <li>Công ty TNHH TechMaster Vietnam Ltd</li>
+                        <li>Số ĐKDN: 0105392153</li>
+                        <li>Ngày cấp: 4-7-2011</li>
+                        <li>Nơi cấp: Sở kế hoạch - đầu tư Hà nội</li>
+                        <li>Người đại diện pháp luật: Lê Minh Thu</li>
+                        <li>Chịu trách nhiệm nội dung: Trịnh Minh Cường</li>
+                    </ul>
+				</div>
+				<div class="footer_column2">
+					<h3>Thông tin chung</h3>
+					<ul class="list-unstyled nav-list">
+                        <li><a href="">Thông tin trung tâm</a></li>
+                        <li><a href="">Giảng viên</a></li>
+                        <li><a href="">Quy định </a></li>
+                        <li><a href="">Hướng dẫn mua khóa học</a></li>
+                        <li><a href="">Hoàn trả - Ưu đãi học phí</a></li>
+                        <li><a href="">Chính sách bảo vệ thông tin khách hàng</a></li>
+                    </ul>
+				</div>
+				<div class="footer_column3">
+					<h3>Thông tin chung</h3>
+					<ul class="list-unstyled nav-list">
+                        <li>
+                            <a href="tel:0383097229">
+                                <i class="fa fa-phone"></i>
+                                Ms. Huyền (Zalo): 038 309 7229
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:huyen@techmaster.vn">
+                                <i class="fa fa-envelope"></i>
+                                 huyen@techmaster.vn
+                            </a>
+                        </li>
+                                    
+                        <li>
+                            <a href="tel:0902209011">
+                            	<i class="fa fa-phone"></i>
+                                Mr. Cường (Zalo): 090 220 9011
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:cuong@techmaster.vn">
+                                <i class="fa fa-envelope"></i>
+                                cuong@techmaster.vn
+                            </a>
+                        </li>            
+                    </ul>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>	            
+                                    
+     
 
-</body>
-</html>
+  
+
+		
