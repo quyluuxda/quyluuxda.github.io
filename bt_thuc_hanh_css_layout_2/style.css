@@ -1,14 +1,19 @@
-body { line-height: 1.5;
+
+html {
+    line-height: 1.5;
     font-size: 14px;
     font-family: sans-serif;
     font-weight: normal;
     color: rgba(0, 0, 0, 0.87);
     margin: 0px auto;
-    padding: 0;
+    width: 960px;
     background-color: #e9eaea;
-	width: 960px;
+}
+body {
+	width: 100%;
+    padding: 0;
+    margin: 0;
 }    
-*{box-sizing: border-box;}
 .site-nav{
 	min-width: 90%;
 	background-color: #ffffff;
@@ -67,10 +72,12 @@ main{
 	font-size: 14px;
 }
 .column1{
+	box-sizing: border-box;
 	width: 66.67%;
 	float: left;
 }
 .course-benefit{
+	box-sizing: border-box;
 	background-color: #ffffff;
 	padding: 1em;
 }
@@ -83,20 +90,23 @@ main{
     text-transform: none;
 }
 .column2{
-	width: 33.33%;
 	float: right;
-	padding-left: 15px;
-}
-.column2_0{
-	margin-bottom: 15px;
+	box-sizing: border-box;
+	width: 31%;
+	margin-left: auto;
+	margin-bottom: 1em;
 	background-color: #ffffff;
 }
 .column2_1{
 	float: right;
+	box-sizing: border-box;
+	width: 31%;
+	margin-left: auto;
 	background-color: #ffffff;
 }
 
 .infor{
+	box-sizing: border-box;
 	background-color: #ffffff;
 	padding: 1em;
 }
