@@ -7,7 +7,7 @@
 	float: left;
 }
 table{
-	width: 100%;
+	width: 80%;
 	background-color: #ffffff;
 	font-family: sans-serif;
 	text-align: center;
@@ -19,9 +19,9 @@ tr{
 	height: 33.33%
 }
 p{
-	font-size: 3.75rem;
+	font-size: 3rem;
 	color: #000000;
-	line-height: 6rem;
+	line-height: 5rem;
 	font-weight: bold;
 }
 .text{
@@ -48,9 +48,9 @@ p.text_3{
 	10%{top: 0px;}
 }
 @keyframes text_2 {
-	30%{top: 100px;}
-	45%{top: -60px;}
-	65%{top: -60px;}
+	30%{top: 50px;}
+	45%{top: -48px;}
+	65%{top: -48px;}
 }
 @keyframes text_3 {
 	0%{opacity: 0;}
@@ -74,7 +74,7 @@ p.text_2{
 p.text_3{
 	animation: text_3 6s ease infinite;
 	position: absolute;
-	top: -60px;
+	top: -48px;
 	z-index: 2;
 	width: 100%;
 }
