@@ -40,6 +40,7 @@
 	height: 3rem;
 }
 .row2_text p{
+	width: 30%;
 	font-size: 1.5rem;	
 	font-family: sans-serif;
 	line-height: 3rem;
@@ -49,11 +50,11 @@
 	animation: text_4 4s linear infinite;
 }
 @keyframes text_4{
-	0%{opacity: 0.2; left: -20%}
-	20%{opacity: 0.4;left: -10%}
-	40%{opacity: 0.6;left: -5%}
-	50%{opacity: 0.8;left: 0%}
-	60%{opacity: 1;left: 5%}
-	80%{opacity: 0.5;left: 10%}
-	100%{opacity: 0;left: 20%}
+	0%{opacity: 0.2; left: 10%}
+	20%{opacity: 0.4;left: 20%}
+	40%{opacity: 0.6;left: 25%}
+	50%{opacity: 0.8;left: 30%}
+	60%{opacity: 1;left: 35%}
+	80%{opacity: 0.5;left: 45%}
+	100%{opacity: 0;left: 55%}
 }
