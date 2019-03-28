@@ -1,0 +1,33 @@
+.row1{
+	width: 100%;
+	height: 300px;
+	margin-top: 5%;
+	font-family: sans-serif;
+}
+.col1{
+	width: 25%;
+	height:300px; 
+	float: left;
+}
+.box{
+	width: 70%;
+	background-color: #003366;
+	border-radius: 0.5rem;
+	margin: 0 auto;
+	transition: background-color 1s linear, border-radius 1s linear; 
+}
+
+h1{ line-height: 4rem;
+	font-size: 1rem;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+}
+a{
+	text-decoration: none;
+}
+
+.box:hover {
+	background-color: #009900;
+	border-radius: 5rem;
+}

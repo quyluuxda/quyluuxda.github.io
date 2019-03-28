@@ -1,0 +1,30 @@
+*{box-sizing: border-box;}
+.col2{
+	width: 25%;
+	height:300px; 
+	float: left;
+}	
+.col2 table{
+	width: 240px;
+	height: 240px;
+	border: 1px solid #999966;
+	margin: 0 auto;
+}
+.row{
+	width: 100%;
+	height: 50%;
+	border: 1px solid #999966;
+}
+.data{
+	width: 50%;
+	height: 50%;
+	border: 1px solid #999966;
+}
+
+.data a img{
+	transition: transform 1s linear;
+	width: 100%;
+}
+.data a img:hover{
+	transform: scale(1.2);
+}
