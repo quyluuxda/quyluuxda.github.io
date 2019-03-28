@@ -1,0 +1,59 @@
+.row0{
+	width: 40%;
+	height: 3rem;
+	margin: 0 auto;
+}
+.row2{
+	width: 100%;
+	height: 3rem;
+	margin: 0 auto;
+	position: relative;
+}
+.row0_text{
+	height: 3rem;
+	text-align: center;
+	background-color: #990000;
+	animation: text_0 20s ease infinite;
+}
+.row0_text p{
+	font-size: 2rem;	
+	font-family: sans-serif;
+	line-height: 3rem;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+@keyframes text_0{
+	0%{opacity: 1; background-color: #990000}
+	10%{opacity: 0.8; background-color: #990000}
+	20%{opacity: 0.6; background-color: #990000}
+	30%{opacity: 0.4; background-color: #990000}
+	40%{opacity: 0.2; background-color: #990000}
+	50%{opacity: 0; background-color: #000099}
+	60%{opacity: 0.2; background-color: #000099}
+	70%{opacity: 0.4; background-color: #000099}
+	80%{opacity: 0.6; background-color: #000099}
+	90%{opacity: 0.8; background-color: #000099}
+	100%{opacity: 1; background-color: #000099}
+}
+.row2_text{
+	height: 3rem;
+}
+.row2_text p{
+	font-size: 1.5rem;	
+	font-family: sans-serif;
+	line-height: 3rem;
+	text-align: center;
+	color: #996600;
+	position: relative;
+	animation: text_4 4s linear infinite;
+}
+@keyframes text_4{
+	0%{opacity: 0.2; left: -20%}
+	20%{opacity: 0.4;left: -10%}
+	40%{opacity: 0.6;left: -5%}
+	50%{opacity: 0.8;left: 0%}
+	60%{opacity: 1;left: 5%}
+	80%{opacity: 0.5;left: 10%}
+	100%{opacity: 0;left: 20%}
+}
