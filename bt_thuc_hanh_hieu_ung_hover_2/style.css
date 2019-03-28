@@ -16,9 +16,9 @@
 	height: 50%;
 	border: 1px solid #999966;
 }
-.data img{
+img{
 	transition: all 1s linear;
 }
-.data :hover img{
+img:hover{
 	transform: scale(1.2);
 }
