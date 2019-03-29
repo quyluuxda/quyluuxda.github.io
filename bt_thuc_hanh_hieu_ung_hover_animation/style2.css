@@ -1,12 +1,11 @@
 *{box-sizing: border-box;}
 .col2{
 	width: 25%;
-	height:300px; 
+
 	float: left;
 }	
 .col2 table{
-	width: 240px;
-	height: 240px;
+	width: 80%;
 	border: 1px solid #999966;
 	margin: 0 auto;
 }
