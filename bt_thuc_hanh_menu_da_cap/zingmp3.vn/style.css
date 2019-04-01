@@ -179,15 +179,11 @@ th{
 	font-weight: bold;
 	line-height: 2rem;
 	width: 120px;
-	color: #6d6d46;
-
 }
 td{
 	text-transform: capitalize;
 	line-height: 2rem;
 	width: 120px;
-	color: #6d6d46;
-
 }
 
 li:hover ul{
@@ -243,11 +239,19 @@ li:hover ul{
 	top: 130px;
 	left: 738px;
 }
-td:hover{
-	background-color: #f7f7f7
+td a{
+	color: #000000;
 }
-th:hover{
-	background-color: #f7f7f7
+th a{
+	color: #000000;
+}
+td a:hover{
+	background-color: #f7f7f7;
+	color: #000099;
+}
+th a:hover{
+	background-color: #f7f7f7;
+	color: #000000;
 }
 .banner{
 	width: 80%;
