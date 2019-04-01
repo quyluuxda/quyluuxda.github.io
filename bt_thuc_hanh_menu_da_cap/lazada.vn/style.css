@@ -29,6 +29,11 @@ a{
 	width: auto;
 	float: right;
 }
+.text1{color: #37cfdd}
+.text2{color: #ff7941}
+.link_list_header a:hover{
+	color: #ffffff;
+}
 .menu_search{
 	width: 100%;
 	height: 6rem;
@@ -117,9 +122,11 @@ a{
 }
 ul li:hover ul{
 	display: block;
+	box-shadow: -1px 0px #d1e0e0;
 }
 ul li ul li:hover span{
 	display: block;
+	box-shadow: -1px 0px #d1e0e0;
 }
 .site_menu_nav1{
 	top: 0;
@@ -137,11 +144,14 @@ ul li ul li:hover span{
 }
 .site_menu_nav1 li:hover{
 	background-color: #f5f5f0;
-	color: #3385ff;
 }
 .site_menu_nav li:hover{
 	background-color: #f5f5f0;
 	color: #3385ff;
 }
-
-
+.site_menu_nav1 li a:hover{
+	color: #3385ff;
+}
+.site_menu_nav li a:hover{
+	color: #3385ff;
+}

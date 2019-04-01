@@ -168,9 +168,10 @@ a{text-decoration: none}
 	width: auto;
 	position: absolute;
 	display: none;
-	padding: 10px;
-	top: 8rem;
-	left: 300px;
+	padding: 15px;
+	padding-right: 0;
+	top: 130px;
+	left: 295px;
 }
 
 th{
@@ -197,45 +198,50 @@ li:hover ul{
 	width: auto;
 	position: absolute;
 	display: none;
-	padding: 10px;
-	top: 8rem;
-	left: 420px;
+	padding: 15px;
+	padding-right: 0;
+	top: 130px;
+	left: 415px;
 }
 .nav_small3{
 	background-color: #ffffff;
 	width: auto;
 	position: absolute;
 	display: none;
-	padding: 10px;
-	top: 8rem;
-	left: 505px;
+	padding: 15px;
+	padding-right: 0;
+	top: 130px;
+	left: 500px;
 }
 .nav_small4{
 	background-color: #ffffff;
 	width: auto;
 	position: absolute;
 	display: none;
-	padding: 10px;
-	top: 8rem;
-	left: 588px;
+	padding: 15px;
+	padding-right: 0;
+	top: 130px;
+	left: 583px;
 }
 .nav_small5{
 	background-color: #ffffff;
 	width: auto;
 	position: absolute;
 	display: none;
-	padding: 10px;
-	top: 8rem;
-	left: 660px;
+	padding: 15px;
+	padding-right: 0;
+	top: 130px;
+	left: 655px;
 }
 .nav_small6{
 	background-color: #ffffff;
 	width: auto;
 	position: absolute;
 	display: none;
-	padding: 10px;
-	top: 8rem;
-	left: 743px;
+	padding: 15px;
+	padding-right: 0;
+	top: 130px;
+	left: 738px;
 }
 td:hover{
 	background-color: #f7f7f7
