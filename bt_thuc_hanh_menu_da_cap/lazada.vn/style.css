@@ -1,0 +1,147 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 12px;
+	font-family: sans-serif;
+}
+a{
+	text-decoration: none;
+	color: #999;
+}
+.link_bar{
+	width: 100%;
+	padding-right: 50px;
+	height: 1.5rem;
+	background-image: linear-gradient(to right, #072120, #072120, #072120, #072120, #072120, #092524,
+	 #0b2a28, #0e2e2c, #143835, #1b433e, #224e47, #295950);
+}
+.link_list_header{
+	text-transform: uppercase;
+	line-height: 1.5rem;
+}
+.link_list_header a{
+	margin-right: 15px;
+	margin-left: 15px;
+	width: auto;
+	float: right;
+}
+.menu_search{
+	width: 100%;
+	height: 6rem;
+	background-image: linear-gradient(to right, #042e30, #0c4448, #165c63, #21757f, #2c8e9d);
+	padding-top: 1rem;
+}
+.logo_bar{
+	width: 85%;
+	margin: auto;
+	height: 3rem;
+}
+.logo{
+	width: 20%;
+	float: left;
+}
+.logo img{
+	height: 2.5rem;
+}
+.search_box{
+	width: 700px;
+	height: 3rem;
+	position: relative;
+	background-color: #ffffff;
+	border-radius: 5px;
+	float: left;
+	padding-right: 45px;
+	border-radius: 5px;
+}
+.search_box_input{
+	height: 3rem;
+	width: 655px;
+	position: absolute;
+	border: 0;
+	padding: 15px;
+	border-radius: 5px;
+}
+.fa-search{
+	position: absolute;
+	right: 15px;
+	top: 18px;
+	color: #ffffff;
+	font-size: 14px;
+}
+.fa-shopping-cart{
+	position: absolute;
+	font-size: 25px;
+	right: -70px;
+	top: 15px;
+	color: #ffffff;
+}
+.search_icon{
+	width: 45px;
+	height: 48px;
+	position: absolute;
+	background-color: #f57224;
+	right: 0px;
+	border-radius: 5px;
+}
+.content{
+	background-color: #34053b;
+}
+.banner{
+	width: 85%;
+	margin: auto;
+	position: relative;
+}
+.banner img{
+	width: 100%;
+}
+/*menu da cap*/
+.site_menu_nav_wrap{
+	width: 200px;
+	font-size: 13px;
+	line-height: 30px;
+	background-color: #ffffff;
+	position: absolute;
+	text-transform: capitalize;
+	margin: 0;
+	padding: 10px;
+	padding-right: 0px;
+}
+.site_menu_nav{
+	list-style-type: none;
+	top: 0;
+	left: 0;
+}
+ul li:hover ul{
+	display: block;
+}
+ul li ul li:hover span{
+	display: block;
+}
+.site_menu_nav1{
+	top: 0;
+	left: 200px;
+	height: 380px;
+	display: none;
+	list-style-type: none;
+}
+.site_menu_nav2{
+	top: 0;
+	left: 200px;
+	height: 380px;
+	display: none;
+	list-style-type: none;
+}
+.site_menu_nav1 li:hover{
+	background-color: #f5f5f0;
+	color: #3385ff;
+}
+.site_menu_nav li:hover{
+	background-color: #f5f5f0;
+	color: #3385ff;
+}
+
+
