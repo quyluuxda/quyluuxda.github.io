@@ -4,26 +4,18 @@
 
 	float: left;
 }	
-.col2 table{
-	width: 80%;
-	border: 1px solid #999966;
+.grid_group{
+	width: 70%;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 10px;
 	margin: 0 auto;
 }
-.row{
-	width: 100%;
-	height: 50%;
-	border: 1px solid #999966;
-}
-.data{
-	width: 50%;
-	height: 50%;
-	border: 1px solid #999966;
-}
-
-.data a img{
+.grid_group img{
 	transition: transform 1s linear;
 	width: 100%;
+	border: 1px solid #999966;
 }
-.data a img:hover{
+.grid_group img:hover{
 	transform: scale(1.2);
 }

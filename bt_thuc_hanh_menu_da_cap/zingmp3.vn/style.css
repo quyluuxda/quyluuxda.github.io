@@ -58,11 +58,10 @@ body{
 }
 
 button{
-	width: 200px;
+	width: 100px;
 	text-align: left;
 	font-size: 14px;
 	line-height: 5rem;
-	color: #6d6d46;
 	float: left;
 	background-color: white;
 	font-weight: bold;
@@ -73,6 +72,7 @@ button{
 	padding-left: 1rem;
 	position: relative;
 }
+button>a{color: #6d6d46;}
 .group_header_search{
 	width: 80%;
 	min-width: 200px;
@@ -117,6 +117,7 @@ button{
 	width: 100%;
 	height: 3rem;
 	background-color: #f7f7f7;
+	float: left;
 }
 .menu_bar::after{
 	display: block;
@@ -128,28 +129,26 @@ button{
 	margin: 0 auto;
 	padding-left: 45px;
 }
-.text_upper{
+.text_upper>a,.text_upper1>a,.text_upper2>a,.text_upper3>a,.text_upper4>a,.text_upper5>a,.text_upper6>a,.text_upper7>a,.text_upper8>a{
 	width: auto;
 	float: left;
 	color: #92929d;
 	font-size: 14px;
-	padding-right: 15px;
-	padding-left: 15px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin: 0px;
 	line-height: 3rem;
 	text-transform: uppercase;
 	font-weight: bold;
 }
-.text_uppera{
-	width: auto;
-	float: left;
-	color: #92929d;
-	font-size: 14px;
-	padding-right: 15px;
-	padding-left: 15px;
-	line-height: 3rem;
-	text-transform: uppercase;
-	font-weight: bold;
+.text_upper,.text_upper1,.text_upper2,.text_upper3,.text_upper4,.text_upper5,.text_upper6,.text_upper7,.text_upper8{
 	position: relative;
+	float: left;
+}
+.text_upper;.text_upper1;.text_upper2;.text_upper3;.text_upper4;.text_upper5;.text_upper6;.text_upper7;.text_upper8::after{
+	display: block;
+	content: "";
+	clear: both;
 }
 li{
 	list-style-type: none;	
@@ -159,19 +158,47 @@ a{text-decoration: none}
 	border-bottom: 2px solid #65509e;
 	color: #65509e;
 }
-.text_upper:hover{
+.text_upper1:hover{
+	border-bottom: 2px solid #65509e;
+	color: #65509e;
+}
+.text_upper2:hover{
+	border-bottom: 2px solid #65509e;
+	color: #65509e;
+}
+.text_upper3:hover{
+	border-bottom: 2px solid #65509e;
+	color: #65509e;
+}
+.text_upper4:hover{
+	border-bottom: 2px solid #65509e;
+	color: #65509e;
+}
+.text_upper5:hover{
+	border-bottom: 2px solid #65509e;
+	color: #65509e;
+}
+.text_upper6:hover{
+	border-bottom: 2px solid #65509e;
+	color: #65509e;
+}
+.text_upper7:hover{
+	border-bottom: 2px solid #65509e;
+	color: #65509e;
+}
+.text_upper8:hover{
 	border-bottom: 2px solid #65509e;
 	color: #65509e;
 }
 .nav_small1{
 	background-color: #ffffff;
-	width: auto;
+	width: 500px;
 	position: absolute;
 	display: none;
 	padding: 15px;
 	padding-right: 0;
-	top: 130px;
-	left: 295px;
+	top: 50px;
+	left: 0px;
 }
 
 th{
@@ -191,53 +218,53 @@ li:hover ul{
 }
 .nav_small2{
 	background-color: #ffffff;
-	width: auto;
+	width: 500px;
 	position: absolute;
 	display: none;
 	padding: 15px;
 	padding-right: 0;
-	top: 130px;
-	left: 415px;
+	top: 50px;
+	left: 0px;
 }
 .nav_small3{
 	background-color: #ffffff;
-	width: auto;
+	width: 500px;
 	position: absolute;
 	display: none;
 	padding: 15px;
 	padding-right: 0;
-	top: 130px;
-	left: 500px;
+	top: 50px;
+	left: 0px;
 }
 .nav_small4{
 	background-color: #ffffff;
-	width: auto;
+	width: 500px;
 	position: absolute;
 	display: none;
 	padding: 15px;
 	padding-right: 0;
-	top: 130px;
-	left: 583px;
+	top: 50px;
+	left: 0px;
 }
 .nav_small5{
 	background-color: #ffffff;
-	width: auto;
+	width: 500px;
 	position: absolute;
 	display: none;
 	padding: 15px;
 	padding-right: 0;
-	top: 130px;
-	left: 655px;
+	top: 50px;
+	left: 0px;
 }
 .nav_small6{
 	background-color: #ffffff;
-	width: auto;
+	width: 120px;
 	position: absolute;
 	display: none;
 	padding: 15px;
 	padding-right: 0;
-	top: 130px;
-	left: 738px;
+	top: 50px;
+	left: 0px;
 }
 td a{
 	color: #000000;
@@ -245,13 +272,9 @@ td a{
 th a{
 	color: #000000;
 }
-td a:hover{
+td:hover{
 	background-color: #f7f7f7;
 	color: #000099;
-}
-th a:hover{
-	background-color: #f7f7f7;
-	color: #000000;
 }
 .banner{
 	width: 80%;
@@ -259,4 +282,5 @@ th a:hover{
 }
 .banner img{
 	width: 100%;
+	margin-top: 2px;
 }
