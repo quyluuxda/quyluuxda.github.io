@@ -1,18 +1,11 @@
 *{box-sizing: border-box;}
 body{
-	margin: 0;
+	margin: 50px;
 	padding: 0px;
 	margin: 0px;
 	border: 0px;
 	font-size: 16px;
 	font-family: inherit;
-}
-.banner{
-	width: 960px;
-	margin: 0 auto;
-}
-.banner img{
-	width: 960px;
 }
 .title{
 	width: 960px;
@@ -22,29 +15,29 @@ body{
 	background: #d1e0e0;
 }
 .grid-container{
+	width: 900px;
 	margin: 0 auto;
 	text-align: center;
-	width: 900px;
 	display: grid;
 	grid-gap: 20px;
 	grid-template-columns: auto auto auto;
 }
-
 .grid-item img{
 	width: 270px;
-	margin-bottom: 5px;
-}	
-
-.grid-item img:hover{
+}
+img:hover{
 	border-radius: 10px;
 	opacity: 0.8;
-	transform: scale(1.05);
-	transition: all 0.5s linear;
+}
+.grid-item a:hover{
+	color: red;
 }
 a{
 	text-decoration: none;
 	color: #000000;
 }
-.grid-item a:hover{
-	color: red;
+.content{
+	width: 900px;
+	margin: 0 auto;
+	text-align: justify;
 }
