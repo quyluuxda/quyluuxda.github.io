@@ -53,6 +53,7 @@ body{
 	border-radius: 10px;
 	color: #ffffff;
 	background-color: #000000;
+	cursor: pointer;
 	float: left;
 }
 .btn_equal{
