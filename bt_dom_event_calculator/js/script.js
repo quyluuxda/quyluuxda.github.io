@@ -68,12 +68,22 @@ function dot(){
       }  
 }
 function sqrt(){
-  x = a('answer').value;
-  a('answer').value = Math.sqrt(x);
+  if(a('answer').value == ''){
+    a('answer').value = '';
+    x = a('answer').value;
+  }else{
+    x = a('answer').value;
+    a('answer').value = Math.sqrt(x);
+  }
 }
 function sqr(){
-  x = a('answer').value;
-  a('answer').value = x*x;
+  if(a('answer').value == ''){
+    a('answer').value = '';
+    x = a('answer').value;
+  }else{
+    x = a('answer').value;
+    a('answer').value = x*x;
+  }
 }
 function factorial(){
   x = a('answer').value;
