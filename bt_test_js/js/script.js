@@ -27,21 +27,27 @@ function bai3(str, target) {
   }
 }
 document.write(bai3("abcde", "de"));
+// Bài 3 Cách dùng endsWith
+ console.log('Bài 3:');
+function bai3endsWith(str, target) {
+  return str.endsWith(target)
+}
+console.log(bai3endsWith("abcde", "de1"));
+console.log(bai3endsWith("abcde", "de"));
 //Bài 4: Cho 1 mảng bất kỳ. Hãy kiểm tra xem trong mảng đó có phần tử nào bị lặp lại hay không.Kết quả trả về true hoặc false.
-document.write("<br>" + "Bài 4:" + "<br>");
+console.log('Bài 4:');
 function bai4(arr) {
   for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr.length; j++) {
-      if (j != i){
-        if(arr[i] === arr[j]) {
+    for (let j = i + 1; j < arr.length; j++) {
+      if(arr[i] === arr[j]) {
         return true;
-      }
+      }else if(Number.isNaN(arr[i]) && Number.isNaN(arr[j])){return true;}
     }
-  }
-}return false
+  }return false
 }
-document.write(bai4(['abc', 3, 2, 'a', 3, 1]));
-//Bài 4 Thiếu trường hợp ([NaN, NaN])
+console.log(bai4(['abc', 3, 2, 'a', 3, 1]));
+console.log(bai4(['abc', NaN, 2, 'a', NaN, 1]));
+console.log(bai4(['abc', 2, 'a', NaN, 1]));
 //Bài 5: Viết hàm truyền vào 1 chuỗi là tên thẻ HTML, kiểm tra xem trong file HTML có bao nhiêu thẻ đó. Kết quả trả về là số lượng thẻ (không bao gồm thẻ đóng), nếu không có trả về 0.
 document.write("<br>" + "Bài 5" + "<br>");
   function countTagName(tagName) {
