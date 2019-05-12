@@ -56,6 +56,9 @@ body{
 	cursor: pointer;
 	float: left;
 }
+.btn_sqr{
+	line-height: 30px;
+}
 .btn_equal{
 	width: 126px;
 	height: 40px;

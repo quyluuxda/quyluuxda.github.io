@@ -33,7 +33,7 @@ function addition(){
     a('answer').value = '';
     x = a('answer').value;
   }
-  if(a('answer').value.endsWith('-') == true || a('answer').value.endsWith('+') == true || a('answer').value.endsWith('x') == true){
+  if(a('answer').value.endsWith('-') == true || a('answer').value.endsWith('+') == true || a('answer').value.endsWith('x') == true || a('answer').value.endsWith('÷') == true){
     x = a('answer').value;
   }else{
     a('answer').value += "+";
