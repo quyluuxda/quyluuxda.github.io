@@ -46,4 +46,8 @@ h1{
     transform: translate(3px,-3px);
 }
 
+#score{
+    display: none
+}
+
 
