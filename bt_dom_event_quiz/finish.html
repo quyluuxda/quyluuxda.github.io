@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Finish</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1 id="returnScore">Bạn đã trả lời đúng</h1>
+	<button id="back">Về trang chủ</button>
+	<button id="try" onclick="tryOneMoreTime()">Làm lại</button>
+	<script src= "js/script.js"></script>
+	<script>
+    document.getElementById("returnScore").innerText = "Bạn trả lời đúng: " + sessionStorage.score
+  </script>
+</body>
+</html>

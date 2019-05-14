@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Quiz</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="quiz">
+			<h1>Quiz</h1>
+			<div class="content">
+				<p class="question" id="q">Tam giác có một góc 35 độ và một góc 55 độ là tam giác gì?</p>
+				<p class="answer" id="a" onclick="choice(this)">Tam giác cân</p>
+				<p class="answer" id="b" onclick="choice(this)">Tam giác vuông</p>
+				<p class="answer" id="c" onclick="choice(this)">Tam giác đều</p>
+				<p class="answer" id="d" onclick="choice(this)">Tam giác thường</p>
+				<button class="nextquestion" onclick="nextQuestion()">Next</button>
+				<p id="score">0/5</p>
+			</div>
+		</div>
+	<script src= "js/script.js"></script>
+	</body>
+</html>
