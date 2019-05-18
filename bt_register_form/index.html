@@ -8,21 +8,22 @@
 	</head>
 	<body id="bg">
 		<div class="dangky">
-			<form id="content" action="login.html">
+			<form id="content" action="login.html" method="get">
 				<h2>Đăng ký</h2><br/>
-				<input id="fullname" type="text" name="fullname" placeholder="Họ và tên">
+				<input id="fullname" type="text" name="full name" placeholder="Họ và tên">
 				<input id="email" type="text" name="email" placeholder="Email">
-				<input id="password" type="password" name="password" placeholder="Mật khẩu">
-				<input id="phonenumber" type="text" name="phonenumber" placeholder="Số điện thoại">
+				<input id="password" type="password" name="pass word" placeholder="Mật khẩu">
+				<input id="phonenumber" type="text" name="phone number" placeholder="Số điện thoại">
 				<input id="address" type="text" name="address" placeholder="Địa chỉ"><br/><br/>
-				<select id="days" class="date_of_birth"></select>	  
-				<select id="months" class="date_of_birth"></select>
-				<select id="years" class="date_of_birth"></select><br/><br/>
+				<select id="days" name="date of birth" class="date_of_birth"></select>	  
+				<select id="months" name="month of birth" class="date_of_birth"></select>
+				<select id="years" name="year of birth" class="date_of_birth"></select><br/><br/>
 				<input type="radio" id="male" name="gender" value="male" checked><label for="male">Male</label>
 				<input type="radio" id="female" name="gender" value="female"><label for="female">Female</label><br/><br/>
     			<button id="submit" type="submit">Đăng ký</button>
 			</form>
 		</div>
 		<script src="js/script.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</body>
 </html>

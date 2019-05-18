@@ -55,17 +55,9 @@ h2{
 #wrap-content h2{
 	margin-bottom: 10px;
 }
-.list-info{
-	width: 110px;
-	padding: 5px;
-	margin: 5px;
-	font-weight: bold;
-	float: left;
+#wrap-content>p{
+	line-height: 30px;
 }
-#name_info, #email_info, #phone_number_info, #birthday_info, #password_info, #address_info, #gentle_info{
-	width: 150px;
-	padding: 5px;
-	margin: 5px;
-	font-weight: bold;
-	float: left;
+#name{
+	margin-bottom: 0px;
 }

@@ -10,79 +10,18 @@
 <body id="bg">
     <div id="wrap-content">
         <h2>Đăng ký thành công</h2>
-        <div class="list-info">Họ và tên:</div>
-        <div id="name_info"></div>
-        <div class="list-info">Email:</div>
-        <div id="email_info"></div>
-        <div class="list-info">Mật khẩu:</div>
-        <div id="password_info"></div>
-        <div class="list-info">Số điện thoại:</div>
-        <div id="phone_number_info"></div>
-        <div class="list-info">Địa chỉ:</div>
-        <div id="address_info"></div>
-        <div class="list-info">Ngày sinh:</div>
-        <div id="birthday_info"></div>
-        <div class="list-info">Giới tính:</div>
-        <div id="gender_info"></div>
+        <p id="name"></p>
     </div>
     <script>
-        function Element(id, prefix) {
-            this.elem = document.getElementById(id);
-            console.assert(this.elem, `fail to bind element width id = "${id}"`);
-            this.prefix = prefix;
-            this.show = function (str) {
-                this.elem.textContent = str;
-            };
+        let str = decodeURIComponent(window.location.href);
+        x = str.split("?");
+        let y = x[1].replace(/[+]/g, ' ');
+        let a = y.split("&");
+        let stt = a.length;
+        for(let i=0; i<stt; i++){
+            a[i]=a[i].split("=")
+            document.getElementById('name').innerHTML += '<b>' + a[i][0].charAt(0).toUpperCase() + a[i][0].slice(1).toLowerCase() + '</b>' + ': ' + a[i][1] + '<br/>'
         }
-
-        let name_info = new Element('name_info', 'Họ và tên: ');
-        let phone_number_info = new Element('phone_number_info', 'Số điện thoại: ');
-        let email_info = new Element('email_info', 'Email: ');
-        let password_info = new Element('password_info', 'Password: ');
-        let address_info = new Element('address_info', 'Địa chỉ: ');
-        let birthday_info = new Element('birthday_info', 'Ngày sinh: ');
-        let gender_info = new Element('gender_info', 'Giới tính: ');
-
-        let URL = document.location.href;
-        let URLDec = decodeURIComponent(URL);
-        let componentArr = URLDec.split('?');
-        componentArr = componentArr[1].split('&');
-
-        function getComponentValue(componentArr, attribute) {
-            let component = componentArr.find((currentValue) => {
-                let regex = new RegExp(`^${attribute}`, 'g');
-                return currentValue.match(regex);
-            })
-            component = component.split('=');
-            return component[1].replace(/[+]/g, ' ');
-        }
-
-        let fullNameValue = getComponentValue(componentArr, 'fullname');
-        let phonenumberValue = getComponentValue(componentArr, 'phonenumber');
-        let emailValue = getComponentValue(componentArr, 'email');
-        let passwordValue = getComponentValue(componentArr, 'password');
-        let addressValue = getComponentValue(componentArr, 'address');
-        /*let dayValue = getComponentValue(componentArr, 'days');
-        let monthValue = getComponentValue(componentArr, 'months');
-        let yearValue = getComponentValue(componentArr, 'years');*/
-        let genderValue = getComponentValue(componentArr, 'gender');
-        switch (genderValue) {
-            case 'male':
-                genderValue = 'Male';
-                break;
-            case 'female':
-                genderValue = 'Female';
-                break;
-            default:
-        }
-
-        name_info.show(fullNameValue);
-        phone_number_info.show(phonenumberValue);
-        email_info.show(emailValue);
-        password_info.show(passwordValue);
-        address_info.show(addressValue);
-        birthday_info.show(dayValue + '/' + monthValue + '/' + yearValue);
-        gender_info.show(genderValue);
     </script>
 </body>
 
