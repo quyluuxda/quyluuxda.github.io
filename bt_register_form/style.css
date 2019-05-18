@@ -24,7 +24,7 @@ h2{
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
 }
-#surname, #firstname, #email,  #password{
+#fullname, #address, #email, #password, #phonenumber{
 	width: 300px;
 	padding: 5px;
 	margin: 5px 0px;
@@ -37,4 +37,35 @@ h2{
 	padding: 5px 10px;
 	font-weight: bold;
 	border-radius: 5px;
+}
+
+/* css cho trang đăng nhập thành công */
+#wrap-content{
+	width: 340px;
+	padding: 20px;
+	background-color: #ffffff;
+	border: solid 3px dimgray;
+	border-radius: 20px;
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+#wrap-content h2{
+	margin-bottom: 10px;
+}
+.list-info{
+	width: 110px;
+	padding: 5px;
+	margin: 5px;
+	font-weight: bold;
+	float: left;
+}
+#name_info, #email_info, #phone_number_info, #birthday_info, #password_info, #address_info, #gentle_info{
+	width: 150px;
+	padding: 5px;
+	margin: 5px;
+	font-weight: bold;
+	float: left;
 }

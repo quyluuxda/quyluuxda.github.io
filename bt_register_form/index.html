@@ -8,30 +8,21 @@
 	</head>
 	<body id="bg">
 		<div class="dangky">
-			<form id="content" action="https://www.facebook.com/">
+			<form id="content" action="login.html">
 				<h2>Đăng ký</h2><br/>
-				<input id="surname" type="text" name="surname" placeholder="Họ">
-				<input id="firstname" type="text" name="firstname" placeholder="Tên">
-				<input id="email" type="text" name="email" placeholder="Số điện thoại hoặc email">
-				<input id="password" type="password" name="password" placeholder="Mật khẩu mới"><br/><br/>
-				<select id="days"></select>	  
-				<select id="months"></select>
-				<select id="years"></select><br/><br/>
-				<input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+				<input id="fullname" type="text" name="fullname" placeholder="Họ và tên">
+				<input id="email" type="text" name="email" placeholder="Email">
+				<input id="password" type="password" name="password" placeholder="Mật khẩu">
+				<input id="phonenumber" type="text" name="phonenumber" placeholder="Số điện thoại">
+				<input id="address" type="text" name="address" placeholder="Địa chỉ"><br/><br/>
+				<select id="days" class="date_of_birth"></select>	  
+				<select id="months" class="date_of_birth"></select>
+				<select id="years" class="date_of_birth"></select><br/><br/>
+				<input type="radio" id="male" name="gender" value="male" checked><label for="male">Male</label>
 				<input type="radio" id="female" name="gender" value="female"><label for="female">Female</label><br/><br/>
-    			<input id="submit" type="submit" name="submit" value="Đăng ký"/>
+    			<button id="submit" type="submit">Đăng ký</button>
 			</form>
 		</div>
-	<script>
-		let days = '<option>Ngày</option>';
-		let months = '<option>Tháng</option>';
-		let years = '<option>Năm</option>';
-		for(let i=1; i<=31; i++){days += `<option>${i}</option>`};
-		for(let i=1; i<=12; i++){months += `<option>Tháng ${i}</option>`};
-		for(let i=2019 ; i>=1930; i--){years += `<option>${i}<option>`};
-		document.getElementById('days').innerHTML = days;
-		document.getElementById('months').innerHTML = months;
-		document.getElementById('years').innerHTML = years;
-	</script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
