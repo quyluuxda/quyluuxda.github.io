@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Table</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="../fontawesome/css/all.css">
+</head>
+
+<body>
+	<div id="wrap">
+		<table id="table">
+			<thead id="table_head">
+				<th id="list1">Hình ảnh</th>
+				<th id="list2" onclick="sort1(0)">Tên sản phẩm <i class="fas fa-sort"></i></th>
+				<th id="list3">Mã sản phẩm <i class="fas fa-sort"></i></th>
+				<th id="list4">Giá tiền ($) <i class="fas fa-sort"></i></th>
+				<th id="list5">Số lượng <i class="fas fa-sort"></i></th>
+			</thead>
+			<tbody id="table_body">
+				<tr class="item">
+					<td class="item_img"><img src="img/1.jpg" alt=""></td>
+					<td class="item_name">Giày thể thao nam Nike Air Max 90 Ultra BR</td>
+					<td class="item_code">725222-402</td>
+					<td class="item_price">50</td>
+					<td class="item_amount">10</td>
+				</tr>
+				<tr class="item">
+					<td class="item_img"><img src="img/2.jpg" alt=""></td>
+					<td class="item_name">Giày thể thao nam Nike Metcon 3</td>
+					<td class="item_code"> 852928-004</td>
+					<td class="item_price">35</td>
+					<td class="item_amount">10</td>
+				</tr>
+				<tr class="item">
+					<td class="item_img"><img src="img/3.jpg" alt=""></td>
+					<td class="item_name">Giày chạy bộ nam Nike Lunar Skyelux</td>
+					<td class="item_code">855808-600</td>
+					<td class="item_price">45</td>
+					<td class="item_amount">5</td>
+				</tr>
+				<tr class="item">
+					<td class="item_img"><img src="img/4.jpg" alt=""></td>
+					<td class="item_name">Giày bóng rổ nam Nike LeBron XIV Low</td>
+					<td class="item_code">878636-002</td>
+					<td class="item_price">62</td>
+					<td class="item_amount">3</td>
+				</tr>
+				<tr class="item">
+					<td class="item_img"><img src="img/5.jpg" alt=""></td>
+					<td class="item_name">Giày tennis nam Nike Zoom Vapor 9.5 Tour</td>
+					<td class="item_code">631458-007</td>
+					<td class="item_price">56</td>
+					<td class="item_amount">12</td>
+				</tr>
+				<tr class="item">
+					<td class="item_img"><img src="img/6.jpg" alt=""></td>
+					<td class="item_name">Giày tennis nam Nike Zoom Vapor 9.5 Tour</td>
+					<td class="item_code">631458-440</td>
+					<td class="item_price">75</td>
+					<td class="item_amount">9</td>
+				</tr>
+				<tr class="item">
+					<td class="item_img"><img src="img/7.jpg" alt=""></td>
+					<td class="item_name">Giày thể thao nam Nike Tennis Classic CS</td>
+					<td class="item_code">683613-017</td>
+					<td class="item_price">32</td>
+					<td class="item_amount">15</td>
+				</tr>
+				<tr class="item">
+					<td class="item_img"><img src="img/8.jpg" alt=""></td>
+					<td class="item_name">Giày tennis nam Nike Air Zoom Ultra</td>
+					<td class="item_code">845007-440</td>
+					<td class="item_price">49</td>
+					<td class="item_amount">8</td>
+				</tr>
+				<tr class="item">
+					<td class="item_img"><img src="img/9.jpg" alt=""></td>
+					<td class="item_name">Giày tennis nam Nike Air Zoom Ultra</td>
+					<td class="item_code">845007-701</td>
+					<td class="item_price">45</td>
+					<td class="item_amount">9</td>
+				</tr>
+				<tr class="item">
+					<td class="item_img"><img src="img/10.jpg" alt=""></td>
+					<td class="item_name">Giày tập luyện nam Nike Metcon Repper DSX</td>
+					<td class="item_code"></td>
+					<td class="item_price">45</td>
+					<td class="item_amount">10</td>
+				</tr>
+				<tr class="item">
+					<td class="item_img"><img src="img/11.jpg" alt=""></td>
+					<td class="item_name">Giày quần vợt nam Nike</td>
+					<td class="item_code">845007-116</td>
+					<td class="item_price">40</td>
+					<td class="item_amount">10</td>
+				</tr>
+				<tr class="item">
+					<td class="item_img"><img src="img/12.jpg" alt=""></td>
+					<td class="item_name">Giày quần vợt nam Nike</td>
+					<td class="item_code">845021-401</td>
+					<td class="item_price">38</td>
+					<td class="item_amount">13</td>
+				</tr>
+				<tr class="item">
+					<td class="item_img"><img src="img/13.jpg" alt=""></td>
+					<td class="item_name">Giày thể thao nam Nike Roshe one HYP BR GPX</td>
+					<td class="item_code">859526-400</td>
+					<td class="item_price">58</td>
+					<td class="item_amount">7</td>
+				</tr>
+				<tr class="item">
+					<td class="item_img"><img src="img/14.jpg" alt=""></td>
+					<td class="item_name">Giày tennis nam Nike Air Zoom Ultra</td>
+					<td class="item_code">845007-140</td>
+					<td class="item_price">33</td>
+					<td class="item_amount">13</td>
+				</tr>
+				<tr class="item">
+					<td class="item_img"><img src="img/15.jpg" alt=""></td>
+					<td class="item_name">Giày luyện tập nam Nike Zoom Train Command</td>
+					<td class="item_code">922478-401</td>
+					<td class="item_price">47</td>
+					<td class="item_amount">11</td>
+				</tr>
+				<tr class="item">
+					<td class="item_img"><img src="img/16.jpg" alt=""></td>
+					<td class="item_name">Giày chạy bộ nam Nike Lunarsolo</td>
+					<td class="item_code">AA4079-009</td>
+					<td class="item_price">47</td>
+					<td class="item_amount">6</td>
+				</tr>
+				<tr class="item">
+					<td class="item_img"><img src="img/17.jpg" alt=""></td>
+					<td class="item_name">Giày tennis nam Nike Air Epic Speed Tr II</td>
+					<td class="item_code">852456-008</td>
+					<td class="item_price">41</td>
+					<td class="item_amount">7</td>
+				</tr>
+				<tr class="item">
+					<td class="item_img"><img src="img/18.jpg" alt=""></td>
+					<td class="item_name">Giày tennis nam Nike Classic Ultra</td>
+					<td class="item_code">876390-100</td>
+					<td class="item_price">37</td>
+					<td class="item_amount">8</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
