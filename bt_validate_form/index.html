@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>form đăng ký</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="bg">
+	<div class="dangky">
+		<form id="content" action="login.html" method="get">
+			<h2>Đăng ký</h2><br />
+			<input id="fullname" type="text" name="full name" placeholder="Họ và tên">
+			<span class="error"></span><br />
+			<input id="email" type="text" name="email" placeholder="Email">
+			<span class="error"></span><br />
+			<input id="password" type="password" name="pass word" placeholder="Mật khẩu">
+			<span class="error"></span><br />
+			<input id="phonenumber" type="text" name="phone number" placeholder="Số điện thoại">
+			<span class="error"></span><br />
+			<input id="address" type="text" name="address" placeholder="Địa chỉ">
+			<span class="error"></span><br />
+			<input id="dateofbirth" type="text" name="date of birth" placeholder="Ngày sinh">
+			<span class="error"></span><br />
+			<input type="radio" id="male" name="gender" value="male" checked><label for="male">Male</label>
+			<input type="radio" id="female" name="gender" value="female"><label for="female">Female</label>
+			<input type="radio" id="other" name="gender" value="other"><label for="other">Other</label><br />
+			<span class="error"></span><br />
+			<button id="submit" type="submit">Đăng ký</button>
+		</form>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$('#content').on('submit', function () {
+			let isValid = true;
+			if ($('#fullname').val().match(/^([ \u00c0-\u01ffa-zA-Z'])+$/) == null || $('#fullname').val().length <= 2) {
+				$('#fullname').next('span').text("Name must be more than 2 digits and not include numberic digit");
+				isValid = false;
+			} else {
+				$('#fullname').next('span').text("");
+			}
+			if ($('#email').val().match(/^((([!#$%&'*+\-/=?^_`{|}~\w])|([!#$%&'*+\-/=?^_`{|}~\w][!#$%&'*+\-/=?^_`{|}~\.\w]{0,}[!#$%&'*+\-/=?^_`{|}~\w]))[@]\w+([-.]\w+)*\.\w+([-.]\w+)*)$/) == null) {
+				$('#email').next('span').text("Email is empty or invalid");
+				isValid = false;
+			} else {
+				$('#email').next('span').text("");
+			}
+			if ($('#password').val().match(/^(?=.*\d).{4,8}$/) == null) {
+				$('#password').next('span').text("Password must be between 4 and 8 digits long and include at least one numeric digit.");
+				isValid = false;
+			} else {
+				$('#password').next('span').text("");
+			}
+			if (
+				$('#phonenumber').val().match(/[0-9]{10,10}/g) == null || $('#phonenumber').val()[0] !== "0") {
+				$('#phonenumber').next('span').text("Phone numbers must be 10 numbers and start with 0.");
+				isValid = false;
+			} else {
+				$('#phonenumber').next('span').text("");
+			}
+			if ($('#address').val().trim() == "") {
+				$('#address').next('span').text("Address is empty.");
+				isValid = false;
+			} else {
+				$('#address').next('span').text("");
+			}
+			if ($('#dateofbirth').val().match(/^[0,1]?\d{1}\/(([0-2]?\d{1})|([3][0,1]{1}))\/(([1]{1}[9]{1}[9]{1}\d{1})|([2-9]{1}\d{3}))$/) == null) {
+				$('#dateofbirth').next('span').text("Dates of the form XX/XX/YYYY where XX can be 1 or 2 digits long and YYYY is always 4 digits long.");
+				isValid = false;
+			} else {
+				$('#dateofbirth').next('span').text("");
+			}
+			return isValid;
+		})
+	</script>
+
+</body>
+
+</html>
