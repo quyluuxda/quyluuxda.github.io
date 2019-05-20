@@ -4,13 +4,17 @@
 	<title>Finish</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-	<h1 id="returnScore">Bạn đã trả lời đúng</h1>
-	<button id="back">Về trang chủ</button>
-	<button id="try" onclick="tryOneMoreTime()">Làm lại</button>
+<body id="body_finish">
+	<div id="finish_wraper">
+			<h1 id="returnScore"></h1>
+			<button id="back" onclick="back()">Về trang chủ</button>
+			<button id="try" onclick="tryOneMoreTime()">Làm lại Quiz</button>
+	</div>
 	<script src= "js/script.js"></script>
 	<script>
-    document.getElementById("returnScore").innerText = "Bạn trả lời đúng: " + sessionStorage.score
-  </script>
+    document.getElementById("returnScore").innerText = "Bạn đã trả lời đúng: " + sessionStorage.score
+	</script>
+	<script src= "js/jquery-3.4.1.min.js"></script>
+	<script src= "js/script.js"></script>
 </body>
 </html>

@@ -3,10 +3,45 @@ body{
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-family: inherit;
+    font-family: 'Courgette', cursive;
+}
+#body1, #body_quiz, #body_finish{
+    background: url(img/bg1.jpg) center center;
+}
+#wraper{
+    position: absolute;
+    max-width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#start{
+    font-weight: bold;
+    font-size: 32px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: #000000 10px 10px 10px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    font-family: 'Courgette', cursive;
+}
+#rule{
+    color: #ffffff;
+    text-align: center;
+}
+#start:hover, #rule:hover,#back:hover, #try:hover{
+    transform: translatey(-5px);
+    background-color: #ff0000;
 }
 h1{
     text-align: center;
+    color: #ffffff;
+    margin: auto;
+    margin-bottom: 20px;
+    line-height: 50px;
+    width: 450px;
+    text-shadow: #000000 10px 10px 10px;
+    border-bottom: solid 5px #ffffff;
 }
 .quiz{
     max-width: 700px;
@@ -15,6 +50,11 @@ h1{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+.answer, .question{
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: #000000 10px 10px 10px;
 }
 .content{
     max-width: 500px;
@@ -36,18 +76,32 @@ h1{
     border: solid 1px black;
     font-weight: bold;
 }
-.nextquestion{
-    width: 100px;
-    height: 30px;
-    margin: 10px;
-    float: right;
-}
 .answer:hover{
+    color: orange;
     transform: translate(3px,-3px);
 }
 
 #score{
     display: none
+}
+
+#finish_wraper{
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#back, #try{
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: #000000 10px 10px 10px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    font-family: 'Courgette', cursive;
 }
 
 

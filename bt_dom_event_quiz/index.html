@@ -1,24 +1,16 @@
-
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Quiz</title>
+		<title>Start the quiz</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
-	<body>
-		<div class="quiz">
-			<h1>Quiz</h1>
-			<div class="content">
-				<p class="question" id="q">Tam giác có một góc 35 độ và một góc 55 độ là tam giác gì?</p>
-				<p class="answer" id="a" onclick="choice(this)">Tam giác cân</p>
-				<p class="answer" id="b" onclick="choice(this)">Tam giác vuông</p>
-				<p class="answer" id="c" onclick="choice(this)">Tam giác đều</p>
-				<p class="answer" id="d" onclick="choice(this)">Tam giác thường</p>
-				<button class="nextquestion" onclick="nextQuestion()">Next</button>
-				<p id="score">0/5</p>
-			</div>
+	<body id="body1">
+		<div id="wraper">
+			<button id="start" onclick="start()">Start the quiz</button><br />
+			<div id="rule">Luật chơi: Bạn phải trả lời 10 câu hỏi Logic từ dễ đến khó. Không giới hạn thời gian cho mỗi câu hỏi nhưng hãy trả lời chúng nhanh nhất có thể!</div>
+			<script src= "js/jquery-3.4.1.min.js"></script>
+			<script src= "js/script.js"></script>
 		</div>
-	<script src= "js/script.js"></script>
 	</body>
 </html>

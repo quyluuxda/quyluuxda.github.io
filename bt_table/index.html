@@ -13,10 +13,10 @@
 		<table id="table">
 			<thead id="table_head">
 				<th id="list1">Hình ảnh</th>
-				<th id="list2" onclick="sort1(0)">Tên sản phẩm <i class="fas fa-sort"></i></th>
-				<th id="list3">Mã sản phẩm <i class="fas fa-sort"></i></th>
-				<th id="list4">Giá tiền ($) <i class="fas fa-sort"></i></th>
-				<th id="list5">Số lượng <i class="fas fa-sort"></i></th>
+				<th id="list2" onclick="sort_name();">Tên sản phẩm <i class="fas fa-sort"></i></th>
+				<th id="list3" onclick="sort_code();">Mã sản phẩm <i class="fas fa-sort"></i></th>
+				<th id="list4" onclick="sort_price();">Giá tiền ($) <i class="fas fa-sort"></i></th>
+				<th id="list5" onclick="sort_amount();">Số lượng <i class="fas fa-sort"></i></th>
 			</thead>
 			<tbody id="table_body">
 				<tr class="item">
@@ -29,7 +29,7 @@
 				<tr class="item">
 					<td class="item_img"><img src="img/2.jpg" alt=""></td>
 					<td class="item_name">Giày thể thao nam Nike Metcon 3</td>
-					<td class="item_code"> 852928-004</td>
+					<td class="item_code"> 602928-104</td>
 					<td class="item_price">35</td>
 					<td class="item_amount">10</td>
 				</tr>
@@ -85,7 +85,7 @@
 				<tr class="item">
 					<td class="item_img"><img src="img/10.jpg" alt=""></td>
 					<td class="item_name">Giày tập luyện nam Nike Metcon Repper DSX</td>
-					<td class="item_code"></td>
+					<td class="item_code">845007-700</td>
 					<td class="item_price">45</td>
 					<td class="item_amount">10</td>
 				</tr>
@@ -147,8 +147,13 @@
 				</tr>
 			</tbody>
 		</table>
+		<input type="hidden" id="name_order" value="asc">
+		<input type="hidden" id="code_order" value="asc">
+		<input type="hidden" id="price_order" value="asc">
+		<input type="hidden" id="amount_order" value="asc">
 	</div>
-	<script src="js/script.js"></script>
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

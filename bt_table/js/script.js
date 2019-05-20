@@ -1,49 +1,88 @@
-let sortedOn = 0;
-function sort1(sortOn) {
-   let table = document.getElementById('table');
-   let tbody = table.getElementsByTagName('tbody')[0];
-   let rows = tbody.getElementsByTagName('tr');
-   let rowArray = new Array();
-    for (let i = 0, length = rows.length; i < length; i++) {
-        rowArray[i] = new Object;
-        rowArray[i].oldIndex = i;
-        rowArray[i].value = rows[i].getElementsByTagName('td')[sortOn].firstChild.nodeValue;
-    }
-    if (sortOn == sortedOn) { rowArray.reverse(); }
-    else {
-        sortedOn = sortOn;
-        /*
-        Decide which function to use from the three:RowCompareNumbers,
-        RowCompareDollars or RowCompare (default).
-        For first column, I needed numeric comparison.
-        */
-        if (sortedOn == 0) {
-            rowArray.sort(RowCompareNumbers);
+// sắp xếp thứ tự các mục
+let tbody = $('#table_body');
+function sort_name(){
+
+    tbody.find('tr').sort(function(a, b) {
+        if ($('#name_order').val() == 'asc'){
+            return $('td:nth-child(2)', a).text().localeCompare($('td:nth-child(2)', b).text());
         }
-        else {
-            rowArray.sort(RowCompare);
+        else{
+            return $('td:nth-child(2)', b).text().localeCompare($('td:nth-child(2)', a).text());
         }
+
+    }).appendTo(tbody);
+
+    let sort_order = $('#name_order').val();
+    if (sort_order == "asc"){
+        document.getElementById("name_order").value = "desc";
     }
-    let newTbody = document.createElement('tbody');
-    for (let i = 0, length = rowArray.length; i < length; i++) {
-        newTbody.appendChild(rows[rowArray[i].oldIndex].cloneNode(true));
+    if (sort_order == "desc"){
+        document.getElementById("name_order").value = "asc";
     }
-    table.replaceChild(newTbody, tbody);
 }
-function RowCompare(a, b) {
-    var aVal = a.value;
-    var bVal = b.value;
-    return (aVal == bVal ? 0 : (aVal > bVal ? 1 : -1));
+
+function sort_code(){
+
+    tbody.find('tr').sort(function(a, b) {
+        if ($('#code_order').val() == 'asc'){
+            return $('td:nth-child(3)', a).text().localeCompare($('td:nth-child(3)', b).text());
+        }
+        else{
+            return $('td:nth-child(3)', b).text().localeCompare($('td:nth-child(3)', a).text());
+        }
+
+    }).appendTo(tbody);
+
+    let sort_order = $('#code_order').val();
+    if (sort_order == "asc"){
+        document.getElementById("code_order").value = "desc";
+    }
+    if (sort_order == "desc"){
+        document.getElementById("code_order").value = "asc";
+    }
 }
-// Compare number
-function RowCompareNumbers(a, b) {
-    var aVal = parseInt(a.value);
-    var bVal = parseInt(b.value);
-    return (aVal - bVal);
+
+function sort_price(){
+
+    tbody.find('tr').sort(function(a, b) {
+        if ($('#price_order').val() == 'asc'){
+            return $('td:nth-child(4)', a).text() - ($('td:nth-child(4)', b).text());
+        }
+        else{
+            return $('td:nth-child(4)', b).text() - ($('td:nth-child(4)', a).text());
+        }
+
+    }).appendTo(tbody);
+
+    let sort_order = $('#price_order').val();
+    if (sort_order == "asc"){
+        document.getElementById("price_order").value = "desc";
+    }
+    if (sort_order == "desc"){
+        document.getElementById("price_order").value = "asc";
+    }
 }
-// compare currency
-function RowCompareDollars(a, b) {
-    var aVal = parseFloat(a.value.substr(1));
-    var bVal = parseFloat(b.value.substr(1));
-    return (aVal - bVal);
+
+function sort_amount(){
+
+    tbody.find('tr').sort(function(a, b) {
+        if ($('#amount_order').val() == 'asc'){
+            return $('td:nth-child(5)', a).text() - ($('td:nth-child(5)', b).text());
+        }
+        else{
+            return $('td:nth-child(5)', b).text() - ($('td:nth-child(5)', a).text());
+        }
+
+    }).appendTo(tbody);
+
+    let sort_order = $('#amount_order').val();
+    if (sort_order == "asc"){
+        document.getElementById("amount_order").value = "desc";
+    }
+    if (sort_order == "desc"){
+        document.getElementById("amount_order").value = "asc";
+    }
 }
+
+
+
