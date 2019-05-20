@@ -3,7 +3,7 @@ body{
 	margin: 0;
 	padding: 0;
 	border: 0;
-    font-family: 'Courgette', cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #body1, #body_quiz, #body_finish{
     background: url(img/bg1.jpg) center center;
@@ -23,7 +23,7 @@ body{
     box-shadow: #000000 10px 10px 10px;
     text-transform: uppercase;
     border-radius: 20px;
-    font-family: 'Courgette', cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #rule{
     color: #ffffff;
@@ -101,7 +101,7 @@ h1{
     box-shadow: #000000 10px 10px 10px;
     text-transform: uppercase;
     border-radius: 20px;
-    font-family: 'Courgette', cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
