@@ -34,7 +34,7 @@ th{
 img:hover{
     transform: scale(2.5)
 }
-.fa-sort{
+.fa-sort, .fa-sort-down, .fa-sort-up {
     display: block;
     margin-left: 10px;
     float: right;

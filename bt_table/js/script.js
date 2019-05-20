@@ -4,9 +4,11 @@ function sort_name(){
 
     tbody.find('tr').sort(function(a, b) {
         if ($('#name_order').val() == 'asc'){
+            $('#list2 i').removeClass("fas fa-sort fas fa-sort-down").addClass("fas fa-sort-up");
             return $('td:nth-child(2)', a).text().localeCompare($('td:nth-child(2)', b).text());
         }
         else{
+            $('#list2 i').removeClass("fas fa-sort-up").addClass("fas fa-sort-down");
             return $('td:nth-child(2)', b).text().localeCompare($('td:nth-child(2)', a).text());
         }
 
@@ -25,9 +27,11 @@ function sort_code(){
 
     tbody.find('tr').sort(function(a, b) {
         if ($('#code_order').val() == 'asc'){
+            $('#list3 i').removeClass("fas fa-sort fas fa-sort-down").addClass("fas fa-sort-up");
             return $('td:nth-child(3)', a).text().localeCompare($('td:nth-child(3)', b).text());
         }
         else{
+            $('#list3 i').removeClass("fas fa-sort-up").addClass("fas fa-sort-down");
             return $('td:nth-child(3)', b).text().localeCompare($('td:nth-child(3)', a).text());
         }
 
@@ -46,9 +50,11 @@ function sort_price(){
 
     tbody.find('tr').sort(function(a, b) {
         if ($('#price_order').val() == 'asc'){
+            $('#list4 i').removeClass("fas fa-sort fas fa-sort-down").addClass("fas fa-sort-up");
             return $('td:nth-child(4)', a).text() - ($('td:nth-child(4)', b).text());
         }
         else{
+            $('#list4 i').removeClass("fas fa-sort-up").addClass("fas fa-sort-down");
             return $('td:nth-child(4)', b).text() - ($('td:nth-child(4)', a).text());
         }
 
@@ -67,9 +73,11 @@ function sort_amount(){
 
     tbody.find('tr').sort(function(a, b) {
         if ($('#amount_order').val() == 'asc'){
+            $('#list5 i').removeClass("fas fa-sort fas fa-sort-down").addClass("fas fa-sort-up");
             return $('td:nth-child(5)', a).text() - ($('td:nth-child(5)', b).text());
         }
         else{
+            $('#list5 i').removeClass("fas fa-sort-up").addClass("fas fa-sort-down");
             return $('td:nth-child(5)', b).text() - ($('td:nth-child(5)', a).text());
         }
 
