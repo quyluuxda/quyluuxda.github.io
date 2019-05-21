@@ -12,6 +12,9 @@ table, th, tr, td{
     margin: 0 auto;
     border: solid 1px #c2d6d6;
 }
+#list2, #list3, #list4, #list5, .item_img{
+    cursor: pointer;
+}
 tr:nth-child(even) {
     background-color: #e1eaea;
 }
