@@ -43,39 +43,67 @@ span{
     background-color: #FFFFFF;
 }
 
-#title {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 32px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #fdbf4e;
-}
-
-@media only screen and (max-width: 768px) {
-    #title {
-        font-size: 25px;
+@media (max-width: 575px){
+.phone, .sale {
+        display: none;
     }
 }
+.input-group{
+    padding-top: 0px!important;
+    margin-bottom: 20px;
+}
+.bd-example:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* phần giới thiêu description */
+.description{
+    max-height: 280px;
+}
+#medal, .my-3{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #a41c24;
+    border-radius: 50%;
+}
+.fa-medal,.fa-shipping-fast,.fa-award{
+    color: #a41c24;
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Bộ sưu tập */
+#title {
+    text-transform: uppercase;
+    color: #a41c24;
+}
+@media only screen and (max-width: 768px) {
+    #title {
+        font-size: 20px;
+    }
+} 
 
 #under_title {
     margin: 0 auto;
     width: 300px;
     position: relative;
-    margin-bottom: 30px;
 }
 
 #under_title img {
     width: 50px;
-    vertical-align: middle;
     display: block;
-    margin: auto;
 }
 
 #under_title::before {
     content: "";
     height: 1px;
-    background-color: #fdbf4e;
+    background-color: #a41c24;
     width: calc((50%) - 30px);
     display: inline-block;
     position: absolute;
@@ -87,9 +115,10 @@ span{
     content: "";
     position: absolute;
     height: 1px;
-    background-color: #fdbf4e;
+    background-color: #a41c24;
     width: calc((50%) - 30px);
     display: inline-block;
     top: calc((50%) - 1px);
     right: 0;
 }
+
