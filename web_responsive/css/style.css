@@ -28,6 +28,7 @@ span{
     background-color: #a41c24;
     border: 1px solid #a41c24;
     color: #FFFFFF;
+    cursor: pointer;
 
 }
 
@@ -81,6 +82,7 @@ span{
 /* Bộ sưu tập */
 #title {
     text-transform: uppercase;
+    cursor: pointer;
     color: #a41c24;
 }
 @media only screen and (max-width: 768px) {
@@ -122,3 +124,16 @@ span{
     right: 0;
 }
 
+.card-img-top{
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+.card-img-top:hover{
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* bài viết */
+.post{
+    background-image: url("img/bg.png");
+}
