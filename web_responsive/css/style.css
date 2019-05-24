@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #FFEFBA;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #FFEFBA);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFFFFF, #FFEFBA);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* css cho thanh logo */
+#logo_bar img{
+    max-height: 90px;
+}
+.fa-tags,.fa-mobile-alt{
+    font-size: 25px;
+    color: #a41c24;
+}
+span{
+    color: #a41c24;
+}
+
+.form-control{
+    border: 1px solid #a41c24; 
+}
+
+.input-group-text{
+    background-color: #a41c24;
+    border: 1px solid #a41c24;
+    color: #FFFFFF;
+
+}
+
+/* css cho thanh navsbar */
+.navbar-light .navbar-nav .nav-link {
+    color: #FFFFFF;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    background-color: #FFFFFF;
+}
+.active{
+    background-color: #FFFFFF;
+}
+
+#title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fdbf4e;
+}
+
+@media only screen and (max-width: 768px) {
+    #title {
+        font-size: 25px;
+    }
+}
+
+#under_title {
+    margin: 0 auto;
+    width: 300px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#under_title img {
+    width: 50px;
+    vertical-align: middle;
+    display: block;
+    margin: auto;
+}
+
+#under_title::before {
+    content: "";
+    height: 1px;
+    background-color: #fdbf4e;
+    width: calc((50%) - 30px);
+    display: inline-block;
+    position: absolute;
+    top: calc((50%) - 1px);
+    left: 0;
+}
+
+#under_title::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #fdbf4e;
+    width: calc((50%) - 30px);
+    display: inline-block;
+    top: calc((50%) - 1px);
+    right: 0;
+}
