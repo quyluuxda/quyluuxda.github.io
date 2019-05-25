@@ -1,11 +1,5 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #FFEFBA;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #FFFFFF, #FFEFBA);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #FFFFFF, #FFEFBA);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* css cho thanh logo */
@@ -62,6 +56,7 @@ span{
 /* phần giới thiêu description */
 .description{
     max-height: 280px;
+    background-color: #ffffcc;
 }
 #medal, .my-3{
     position: relative;
@@ -124,16 +119,21 @@ span{
     right: 0;
 }
 
-.card-img-top{
+.overflow-hidden>.card-img-top{
     cursor: pointer;
     transition: all 0.5s linear;
 }
-.card-img-top:hover{
+.overflow-hidden>.card-img-top:hover{
     transform: scale(1.2);
     opacity: 0.8;
 }
 
 /* bài viết */
 .post{
-    background-image: url("img/bg.png");
+    background-color: #eff5f5;
 }
+
+.card-deck>.card{
+    cursor: pointer;
+}
+
