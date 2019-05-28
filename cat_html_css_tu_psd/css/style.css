@@ -27,12 +27,10 @@ body {
 /* phần header */
 
 @media (min-width:1200px) {
-    .container {
+    header.container {
         max-width: 1060px;
     }
 }
-
-
 
 #wrap, .banner {
     margin-top: 4rem;
@@ -60,12 +58,15 @@ header>#wrap::after {
 #menu-nav {
     max-width: 900px;
 }
+
 @media (max-width:768px) {
     .nav-link {
         padding-right: 20px;
         padding-left: 20px;
         color: #626262;
+    }
 }
+
 @media (max-width:576px) {
     .nav-link {
         padding-right: 5px;
@@ -73,18 +74,22 @@ header>#wrap::after {
         color: #626262;
     }
 }
+
 /* phần section */
 
-section>#post::after {
-    display: block;
-    content: "";
-    clear: both;
+.container {
+    max-width: 960px;
 }
 
-@media (min-width:1200px) {
-    section>#description, section>#post {
-        max-width: 900px;
-    }
+
+.card-body, .card-img-top{
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 420px;
+}
+#description{
+    max-width: 900px;
+    margin-left: 30px;
 }
 
 h2 {
@@ -104,31 +109,33 @@ h5 {
     height: 284px;
     background-color: #f0f0f0;
 }
-#sign-up{
+
+#sign-up {
     position: absolute;
     margin: auto;
-    width: 400px;  
+    width: 350px;
     border-bottom: 1px solid #000;
     left: 50%;
     transform: translate(-50%);
 }
 
-input{
+input {
     border: none;
-    width: 90%;
+    width: 80%;
     background-color: #f0f0f0;
 }
-a>img{
+
+a>img {
     cursor: pointer;
 }
+
 section>#post>div::after {
     display: block;
     content: "";
     clear: both;
 }
 
-
-button{
+button {
     margin-top: 100px;
     font-size: 20px;
     background-color: #fff;
@@ -138,13 +145,14 @@ button{
 }
 
 /* phần footer */
+
 @media (min-width:1200px) {
-    footer>.container{
+    footer>.container {
         width: 1200px;
     }
 }
 
-footer{
+footer {
     margin-top: 300px;
     max-height: 100px;
     background-color: #f0f0f0;
