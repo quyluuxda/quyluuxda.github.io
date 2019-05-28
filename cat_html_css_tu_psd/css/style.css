@@ -81,28 +81,34 @@ header>#wrap::after {
     max-width: 960px;
 }
 
-
-.card-body, .card-img-top{
+.card-body, .card-img-top {
     margin-left: 30px;
     margin-right: 30px;
     max-width: 420px;
 }
+
 @media (max-width:992px) {
-    .card-body, .card-img-top, #section2{
-        padding: 0;
+    .card-body, .card-img-top, #section2 {
+        padding: 15px;
         margin: auto;
     }
 }
-#description{
+
+#description {
     max-width: 900px;
     margin-left: 30px;
+}
+
+@media (max-width:992px) {
+    #description {
+        padding: 15px;
+        margin: 0 auto;
+    }
 }
 
 h2 {
     font-size: 30px;
 }
-
-
 
 h5 {
     font-size: 14px;
@@ -128,10 +134,11 @@ h5 {
 }
 
 @media (max-width:992px) {
-    #sign-up{
+    #sign-up {
         width: 300px;
     }
 }
+
 input {
     border: none;
     width: 80%;
@@ -176,8 +183,9 @@ footer {
         width: 900px;
     }
 }
+
 @media (max-width:992px) {
-    footer{
+    footer {
         padding: 0px;
         margin-left: 7px;
     }
