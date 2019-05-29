@@ -2,20 +2,12 @@
 
 @font-face {
     font-family: "inconsolata-regular";
-    src: url('../Minimo/FONTS/inconsolata/Inconsolata-Regular-webfont.eot');
-    /* IE9 Compat Modes */
-    src: url('../Minimo/FONTS/inconsolata/Inconsolata-Regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../Minimo/FONTS/inconsolata/Inconsolata-Regular-webfont.svg#svgFontName') format('svg');
-    /* Legacy iOS */
+    src: url('../Minimo/FONTS/inconsolata/Inconsolata-Regular.ttf');
 }
 
 @font-face {
     font-family: "playfairdisplay-regular";
-    src: url('../Minimo/FONTS/Playfair_Display/PlayfairDisplay-Regular-webfont.eot');
-    /* IE9 Compat Modes */
-    src: url('../Minimo/FONTS/Playfair_Display/PlayfairDisplay-Regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../Minimo/FONTS/Playfair_Display/PlayfairDisplay-Regular-webfont.svg#svgFontName') format('svg');
-    /* Legacy iOS */
+    src: url('../Minimo/FONTS/Playfair_Display/playfairdisplay-regular.ttf');
 }
 
 body {
@@ -23,8 +15,18 @@ body {
     font-size: 14px;
     color: #626262;
 }
-
+a{
+    cursor: pointer;
+    color: #626262;
+}
+a:hover{
+    text-decoration: none;
+}
 /* phần header */
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
 
 @media (min-width:1200px) {
     header.container {
@@ -57,8 +59,17 @@ header>#wrap::after {
 
 #menu-nav {
     max-width: 900px;
+    padding: 0;
 }
 
+@media (max-width:992px){
+    #wrap{
+        float: none;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+    }
+}
 @media (max-width:768px) {
     .nav-link {
         padding-right: 20px;
@@ -88,20 +99,21 @@ header>#wrap::after {
 }
 
 @media (max-width:992px) {
-    .card-body, .card-img-top, #section2 {
-        padding: 15px;
+    .card-body,.card-img-top, #section2 {
+        padding: 0px;
         margin: auto;
     }
+    a{text-align: center;}
 }
 
 #description {
     max-width: 900px;
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
 @media (max-width:992px) {
     #description {
-        padding: 15px;
+        padding: 0px 30px;
         margin: 0 auto;
     }
 }
@@ -141,12 +153,8 @@ h5 {
 
 input {
     border: none;
-    width: 80%;
+    width: 85%;
     background-color: #f0f0f0;
-}
-
-a>img {
-    cursor: pointer;
 }
 
 section>#post>div::after {
@@ -160,6 +168,7 @@ button {
     font-size: 20px;
     background-color: #fff;
     color: #626262;
+    border: solid 1px #626262;
     left: 50%;
     transform: translate(-50px);
 }
@@ -184,9 +193,3 @@ footer {
     }
 }
 
-@media (max-width:992px) {
-    footer {
-        padding: 0px;
-        margin-left: 7px;
-    }
-}
