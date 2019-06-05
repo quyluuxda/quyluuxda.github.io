@@ -547,7 +547,7 @@ body {
 
 #footer2 {
     background-color: #F6F8F9;
-    height: 74px;
+    min-height: 74px;
 }
 
 .muc {
@@ -581,7 +581,7 @@ body {
 }
 
 @media (max-width:768px) {
-    #footer2 .row {
+    #footer2{
         padding-bottom: 1rem;
     }
 }
@@ -590,7 +590,7 @@ body {
         text-align: center;
     }
     .muc, .brands{
-        margin-top: 2rem;
+        padding-top: 2rem;
     }
 }
 
