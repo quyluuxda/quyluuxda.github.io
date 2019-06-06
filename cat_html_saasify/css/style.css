@@ -339,9 +339,13 @@ body {
         text-align: center;
     }
 }
+a{
+    color: #919AA3;
+}
 
 a:hover{
     text-decoration: none;
+    color:#171C34
 }
 
 .about>a:hover{
