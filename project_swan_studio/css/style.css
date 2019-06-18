@@ -21,6 +21,7 @@ a:hover{
 
 body {
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 h4 {
@@ -213,6 +214,7 @@ section
 .reservation-detail{
     color: #ffffff;
     font-size: 14px;
+    font-weight: lighter;
 }
 
 @media (max-width:992px){
@@ -243,3 +245,51 @@ section
         font-size: 12px;
     }
 }
+
+/* phần bài viết section4 */
+.card{
+    transition: all 0.5s linear;
+}
+
+.card:hover{
+    box-shadow: 5px 10px 8px #888888;
+    transform: translate(5px, -5px);
+}
+
+.btn-style{
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #535353;
+    border: #535353 1px solid;
+    transition: all 0.5s linear;
+}
+
+.btn-style:hover{
+    background-color: #888888;
+}
+
+/* phần footer */
+footer{
+    background-color: #535353;
+}
+
+footer span{
+    color: #ffffff;
+}
+
+.fa-caret-square-up{
+    font-size: 30px;
+    right: 30px;
+    bottom: 30px;
+    color: #888888;
+}
+
+#myBtn {
+    background-color:transparent;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+  }
+
