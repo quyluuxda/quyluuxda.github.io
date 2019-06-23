@@ -170,29 +170,29 @@ console.log(bai3_1([false, true, null, undefined, NaN, 0, "", 1, " "]));
 /*Bài 2: Viết hàm so sánh mảng, truyền vào 2 mảng bất kỳ, kết quả trả về là 1 mảng chỉ chứa những
 phần tử không đồng thời nằm trong 2 mảng truyền vào. Ví dụ truyền vào [1, 2, 3] và [1, 3, 4, 5] thì
 kết quả trả về là mảng [2, 4, 5].*/
-function compareArr(firstArr, secondArr){
+function compareArr(firstArr, secondArr) {
   let newArr = [];
   let firstArrLength = firstArr.length
   let secondArrLength = secondArr.length
-  for(let i=0; i < firstArrLength; i++){
+  for (let i = 0; i < firstArrLength; i++) {
     let temp = 0;
-    for(let j = 0; j< secondArrLength; j++ ){
-      if(secondArr[j] == firstArr[i]){
+    for (let j = 0; j < secondArrLength; j++) {
+      if (secondArr[j] == firstArr[i]) {
         temp = 1;
         break;
       }
     }
-    if(temp == 0){newArr.push(firstArr[i])} 
+    if (temp == 0) { newArr.push(firstArr[i]) }
   }
-  for(let i=0; i < secondArrLength; i++){
+  for (let i = 0; i < secondArrLength; i++) {
     let temp = 0;
-    for(let j = 0; j< firstArrLength; j++ ){
-      if(secondArr[i] == firstArr[j]){
+    for (let j = 0; j < firstArrLength; j++) {
+      if (secondArr[i] == firstArr[j]) {
         temp = 1;
         break;
       }
     }
-    if(temp == 0){newArr.push(secondArr[i])} 
+    if (temp == 0) { newArr.push(secondArr[i]) }
   }
   return newArr;
 }
@@ -203,13 +203,13 @@ console.log(compareArr([1, 2, 3], [1, 3, 4, 5]));
 function locDoDaiLonNhat(arr) {
   let newArr = []
   let max = arr[0].length;
-  for(let i=0; i<arr.length; i++){
-    if(arr[i].length>= max){
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length >= max) {
       max = arr[i].length;
     }
   }
-  for(let j=0; j<arr.length; j++){
-    if(arr[j].length == max){
+  for (let j = 0; j < arr.length; j++) {
+    if (arr[j].length == max) {
       newArr.push(arr[j])
     }
   }
@@ -220,35 +220,35 @@ console.log(locDoDaiLonNhat(["aba", "aa", "ad", "c", "vcd"]))
 /*Bài 4: Cho 2 số nguyên dương n và m. Tạo ra 1 mảng 2 chiều n x m là các số nguyên liên tiếp
 (tính từ 1) theo kiểu ziczac. Ví dụ với n = 3 và m = 3 thì kết quả là mảng 2 chiều như sau 
 [ [1, 2, 3], [6, 5, 4], [7, 8, 9] ].*/
-function bai4(m, n){
-	var dapan =[];
-	for(var i = 0; i < m; i++){
-		var row = [];
-		for(var j = 0; j < n; j++){
-			if(i % 2 === 0){
-				row.push(i * n + j + 1);
-			}
-			else{
-				row.push((i + 1) * n - j);
-			}
-    	}
-		dapan.push(row);
-	}
-	return dapan;
+function bai4(m, n) {
+  var dapan = [];
+  for (var i = 0; i < m; i++) {
+    var row = [];
+    for (var j = 0; j < n; j++) {
+      if (i % 2 === 0) {
+        row.push(i * n + j + 1);
+      }
+      else {
+        row.push((i + 1) * n - j);
+      }
+    }
+    dapan.push(row);
+  }
+  return dapan;
 }
-console.log(bai4(3, 3)
+console.log(bai4(3, 3))
 
 // Xử lý object
-console.log("Xử lý object")
+console.log("Xử lý object");
 
 /*Bài 1: Cho 1 object. Viết hàm kiểm tra xem object đó có phải là object rỗng hay không (không có thuộc
 tính nào). Kết quả trả về true hoặc false.*/
 function isEmpty(obj) {
-  if (Object.getOwnPropertyNames(obj).length === 0) {
-    return true;
+    if (Object.getOwnPropertyNames(obj).length === 0) {
+      return true;
+    }
+    return false;
   }
-  return false;
-}
 console.log(isEmpty({}));
 console.log(isEmpty({ name: "An", age: 20 }));
 
@@ -285,12 +285,12 @@ console.log(getNameH(arr))
 
 /*Bài 5: Cho 1 mảng các object chứa thông tin sinh viên dạng { name: ''Huy'', gender: ''Male'', age: 20 }.
 Viết hàm tính ra số tuổi trung bình của toàn bộ sinh viên.*/
-function tinhTuoiTB(arr){
+function tinhTuoiTB(arr) {
   tong = 0;
-  for(let i = 0; i<arr.length; i++){
+  for (let i = 0; i < arr.length; i++) {
     tong += arr[i].age
   }
-  return tong/arr.length
+  return tong / arr.length
 }
 console.log(tinhTuoiTB(arr))
 
@@ -318,11 +318,11 @@ console.log(giaiPTBacHai(-2, 1, 1))
 /*Bài 3: Viết hàm có 2 tham số, tham số đầu tiên là 1 chuỗi thời gian t dạng ''giờ:phút:giây'', tham số
 thứ 2 là 1 số x <= 1000. Kết quả trả về là 1 chuỗi biểu thị thời gian sau x giây kể từ thời điểm t. Ví
 dụ với t = ''9:20:56'' và x = 7 thì kết quả là ''9:21:3''.*/
-function thoiGian(t, x){
+function thoiGian(t, x) {
   arr = t.split(":");
-  h = Math.floor(x/3600)
-  m = Math.floor((x%3600)/60)
-  s = (x%3600)%60
+  h = Math.floor(x / 3600)
+  m = Math.floor((x % 3600) / 60)
+  s = (x % 3600) % 60
   arr[0] = +arr[0] + h
   arr[1] = +arr[1] + m
   arr[2] = +arr[2] + s
