@@ -1,0 +1,16 @@
+.bgc3{
+    background-color: #ebebeb;
+}
+
+.bgc4{
+    background-color: #ffffff;
+}
+
+@media (max-width:768px){
+    .bgc3{
+        background-color: #ffffff;
+    }
+    .bgc4{
+        background-color: #ebebeb;
+    }
+}

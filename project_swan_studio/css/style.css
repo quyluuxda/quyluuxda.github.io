@@ -38,15 +38,18 @@ h4 {
 
 .nav-item {
     margin: 0rem 1rem;
-    font-weight: bold;
 }
 
 .nav-item>a {
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.nav-item-active>a {
+    border-bottom: 1px solid #535353;
 }
 
 .nav-item>a:hover {
-    border-bottom: 2px solid #535353;
+    border-bottom: 1px solid #535353;
     transition: all 1s linear;
 }
 
@@ -114,32 +117,20 @@ h4 {
     font-size: 14px;
 }
 
-.row0 .cl2:hover .img-border {
+.row0 .cl2 .img-border:hover {
     opacity: 0.6;
 }
 
 #xem_them1 {
     background: #535353;
     color: #ffffff;
+    border: #535353 1px solid;
     transition: all 0.5s linear;
 }
 
 #xem_them1:hover{
-    background: #888888;
-}
-
-#xem_them2 {
     background: #ffffff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: all 0.5s linear;
-}
-
-.cl2:hover #xem_them2 {
-    opacity: 1;
+    color: #535353;
 }
 
 @media (max-width:576px) {
@@ -265,7 +256,8 @@ section
 }
 
 .btn-style:hover{
-    background-color: #888888;
+    color: #535353;
+    background-color: #ffffff;
 }
 
 /* phần footer */
@@ -273,7 +265,11 @@ footer{
     background-color: #535353;
 }
 
-footer span{
+footer span, footer span a{
+    color: #ffffff;
+}
+
+footer span a:hover{
     color: #ffffff;
 }
 
