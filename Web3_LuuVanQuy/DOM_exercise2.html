@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>About Me</title>
+</head>
+
+<body>
+	<h1>About Me</h1>
+
+	<ul>
+		<li>Nickname: <span id="nickname"></span>
+		<li>Favorites: <span id="favorites"></span>
+		<li>Hometown: <span id="hometown"></span>
+	</ul>
+	<script>
+		// Thay font chữ
+		function changeFont(font) {
+			let el = document.querySelectorAll('body');
+			el[0].style.fontFamily = font
+		}
+		changeFont('Arial, sans-serif')
+		// Thay thông tin
+		// function changeInfo() {
+		// 	let el = document.querySelectorAll('li');
+		// 	el[0].innerText = "Fullname"
+		// 	el[1].innerText = "Hobbies"
+		// 	el[2].innerText = "Address"
+		// }
+		changeInfo()
+		function changeInfo() {
+			let el = document.querySelectorAll('span');
+			el[0].innerText = "Lưu Văn Quý"
+			el[1].innerText = "Football"
+			el[2].innerText = "Vĩnh Phúc"
+		}
+		changeInfo()
+
+		// Thêm Class
+		function addClassLissItem() {
+			let element = document.querySelectorAll("li");
+			for (let i = 0; i < element.length; i++) {
+				element[i].classList.add("listitem");
+
+			}
+			let element1 = document.getElementsByClassName("listitem")
+			for (let i = 0; i < element1.length; i++) {
+				element1[i].style.color = "red";
+			}
+		}	
+		addClassLissItem()
+
+		// thêm thẻ img
+		function addElement(){
+			add = document.createElement("img");
+			add.setAttribute("src", "https://scontent.fhan4-1.fna.fbcdn.net/v/t1.0-9/61792914_2065111320266671_144930720760987648_n.jpg?_nc_cat=108&_nc_oc=AQk20GgGEDPu29M2PS2fDy915C7woQ8EZVk4wvThIxsYrPH8vHm5vpmQ_s-0KUql-jM&_nc_ht=scontent.fhan4-1.fna&oh=75dfdb4ddcbd0b1155b7991396e587b8&oe=5D7FCF83")
+			add.setAttribute("width", "200px")
+			document.getElementsByTagName('body')[0].appendChild(add);
+		}
+		addElement()
+	</script>
+</body>
+
+</html>

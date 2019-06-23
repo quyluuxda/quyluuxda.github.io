@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>My Books List</title>
+</head>
+
+<body>
+	<h1>My Books List</h1>
+	<script>
+		let arr = [
+			{
+				title: 'The Design of EveryDay Things',
+				author: 'Don Norman',
+				thumbnail: 'https://upload.wikimedia.org/wikipedia/en/3/33/The_Design_of_Everyday_Things_%28cover_1988%29.jpg',
+				alreadyRead: false
+			},
+			{
+				title: 'The Most Human Human',
+				author: 'Brian Christian',
+				thumbnail: 'https://images-na.ssl-images-amazon.com/images/I/51aKPFuUy1L._SX324_BO1,204,203,200_.jpg',
+				alreadyRead: true
+			},
+			{
+				title: 'Thanh xuân không hối tiếc',
+				author: 'Du Phong',
+				thumbnail: 'https://salt.tikicdn.com/cache/550x550/media/catalog/product/h/i/hinh-2.u4939.d20171027.t100256.394595.jpg',
+				alreadyRead: false
+			},
+			{
+				title: 'Cây chuối non đi giày xanh',
+				author: 'Nguyễn Nhật Ánh',
+				thumbnail: 'https://salt.tikicdn.com/cache/550x550/ts/product/fe/e8/38/8e06ed7eff643c2bd5d4651729ddd391.jpg',
+				alreadyRead: true
+			},
+		]
+		for (i = 0; i < arr.length; i++) {
+			let addDiv = document.createElement('div');
+			document.getElementsByTagName('body')[0].appendChild(addDiv);
+			addDiv.innerHTML =
+				`<h2>${arr[i].title}</h2> <p>${arr[i].author}</p><img src="${arr[i].thumbnail}">`
+			if (arr[i].alreadyRead == true) {
+				addDiv.style.backgroundColor = "yellow"
+			} else {
+				addDiv.style.backgroundColor = "blue"
+			}
+		}
+
+
+		// eleDiv.style.color = book.alreadyRead ? "red" : "blue";
+        // document.getElementsByTagName('body')[0].appendChild(eleDiv);
+	</script>
+</body>
+
+</html>
