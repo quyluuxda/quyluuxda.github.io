@@ -1,0 +1,14 @@
+.row6{
+    padding-bottom: 2rem;
+}
+
+@media (max-width:576px){
+    .row6{
+        padding-bottom: 1rem;
+    }
+}
+
+.card-svc:hover{
+    box-shadow: 5px 5px 15px 5px #888888;
+    transform: none;
+}
