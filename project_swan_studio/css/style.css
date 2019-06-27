@@ -185,7 +185,6 @@ h4 {
 }
 
 /* phần sản phẩm section3 */
-
 section
 .wrap {
     height: 550px;
@@ -247,13 +246,65 @@ section
 }
 
 /* phần bài viết section4 */
+#section4{
+    padding-top: 4rem;
+}
+
 .card{
     transition: all 0.5s linear;
 }
 
-.card:hover{
-    box-shadow: 5px 10px 8px #888888;
-    transform: translate(5px, -5px);
+#post-content{
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #535353;
+}
+
+#main-post{
+    overflow: hidden;
+}
+
+#main-post>img{
+    transition: all 1s linear; 
+    cursor: pointer;
+}
+
+#main-post:hover img{
+    opacity: 0.6;
+    transform: scale(1.1)
+}
+
+#more-post{
+    padding: 2rem 0;
+    display: block;
+    column-count: 3;
+}
+
+#wrap-more-post{
+    position: relative;
+    overflow: hidden;
+}
+
+.title-post{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    background-color: #ffffff;
+    opacity: 0;
+    transition: all 1s linear;
+}
+
+#wrap-more-post>img{
+    transition: all 0.5s linear; 
+    cursor: pointer;
+}
+
+
+#wrap-more-post:hover .title-post{
+    opacity: 1;
+}
+
+#wrap-more-post:hover img{
+    opacity: 0.6;
 }
 
 .btn-style{
