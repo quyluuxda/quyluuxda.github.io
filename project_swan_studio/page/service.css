@@ -1,9 +1,9 @@
-.row6{
+#row6{
     padding-bottom: 2rem;
 }
 
 @media (max-width:576px){
-    .row6{
+    #row6{
         padding-bottom: 1rem;
     }
 }
@@ -48,3 +48,9 @@
     transform: scale(1.1);
 }
 
+#filter{
+    border: 1px solid #535353;
+    font-size: 14px;
+    color: #535353;
+    padding: 0.5rem 0;
+}

@@ -39,7 +39,7 @@
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="service.html">Dịch vụ sẵn có</a>
 							<a class="dropdown-item" href="#">Dịch vụ của bạn</a>
-							<a class="dropdown-item" href="#gift">Khuyến mãi</a>
+							<a class="dropdown-item" href="service.html#gift">Khuyến mãi</a>
 						</div>
 					</li>
 				</ul>
@@ -123,8 +123,8 @@
 										for="one-d">1 cặp</label>
 									<input type="radio" id="two-d" name="dress" value="2 cặp"> <label for="two-d">2
 										cặp</label>
-									<input type="radio" id="three-d" name="dress" value="3 cặp"> <label
-										for="three-d">3 cặp</label>
+									<input type="radio" id="three-d" name="dress" value="3 cặp"> <label for="three-d">3
+										cặp</label>
 
 								</td>
 							</tr>
@@ -212,41 +212,41 @@
 							<tr class="item1">
 								<td id="tr-dress" class="item_name">Trang phục</td>
 								<td id="tr-3" class="text-center"></td>
-								<td  id="tr_3" class="money"></td>
+								<td id="tr_3" class="money"></td>
 							</tr>
 							<tr class="item1">
 								<td class="item_name">Trang điểm</td>
 								<td id="tr-4" class="text-center"></td>
-								<td  id="tr_4" class="money"></td>
+								<td id="tr_4" class="money"></td>
 							</tr>
 							<tr class="item1">
 								<td class="item_name">Hoa, phụ kiện</td>
 								<td id="tr-5" class="text-center"></td>
-								<td  id="tr_5" class="money"></td>
+								<td id="tr_5" class="money"></td>
 							</tr>
 							<tr class="item1">
 								<td class="item_name">01 Album ảnh</td>
 								<td class="text-center"></td>
-								<td  id="tr_6" class="money"></td>
+								<td id="tr_6" class="money"></td>
 							</tr>
 							<tr class="item1">
 								<td class="item_name">02 Ảnh ép gỗ</td>
 								<td class="text-center"></td>
-								<td  id="tr_7" class="money"></td>
+								<td id="tr_7" class="money"></td>
 							</tr>
 							<tr class="item1">
 								<td class="item_name">02 Ảnh để bàn</td>
 								<td class="text-center"></td>
-								<td  id="tr_8" class="money"></td>
+								<td id="tr_8" class="money"></td>
 							</tr>
 							<tr class="item1">
 								<td class="item_name">02 DVD Slide show</td>
 								<td class="text-center"></td>
-								<td  id="tr_9" class="money"></td>
+								<td id="tr_9" class="money"></td>
 							</tr>
 							<tr class="item1" style="height: 73px">
 								<td class="item_name text-center" style="background-color: #ebebeb">CHI PHÍ DỰ KIẾN</td>
-								<td  id="tr_10" class="money text-center" colspan="2"></td>
+								<td id="tr_10" class="money text-center" colspan="2"></td>
 							</tr>
 						</tbody>
 					</table>
@@ -285,51 +285,51 @@
 	<script src="../js/bootstrap.min.js"></script>
 	<script src="script.js"></script>
 	<script>
-		
+
 		function sumPrice() {
 			function date(x) {
 				let y = 3990000;
 				switch (x) {
 					case "halfday":
 						($('.item1 #tr-1').text("0.5"));
-						($('.item1 #tr_1').text(0.5*y));
+						($('.item1 #tr_1').text(0.5 * y));
 						break;
 					case "oneday":
 						($('.item1 #tr-1').text("1"));
-						($('.item1 #tr_1').text(1*y));
+						($('.item1 #tr_1').text(1 * y));
 						break;
 					case "onedayandahalf":
 						($('.item1 #tr-1').text("1.5"));
-						($('.item1 #tr_1').text(1.5*y));
+						($('.item1 #tr_1').text(1.5 * y));
 						break;
 					case "twoday":
 						($('.item1 #tr-1').text("2"));
-						($('.item1 #tr_1').text(2*y));
+						($('.item1 #tr_1').text(2 * y));
 						break;
 				}
 			}
 			date($('#tr1 input:checked').val());
 
 			function dress(x) {
-				if(x == "none-d"){
+				if (x == "none-d") {
 					$('.item1 #tr-3').text("0")
 					$('.item1 #tr_3').text(0);
-				}else{
+				} else {
 					$('.item1 #tr-3').text($('.item1 #tr-1').text())
 					$('.item1 #tr-dress').text("Trang phục " + $('#tr3 input:checked').val());
-					function getPrice(x){
-						let arr = [0,1000000, 1800000, 2500000];
-						switch (x){
+					function getPrice(x) {
+						let arr = [0, 1000000, 1800000, 2500000];
+						switch (x) {
 							case "1 cặp":
-							($('.item1 #tr_3').text(arr[1]*$('.item1 #tr-1').text()));
-							break;
+								($('.item1 #tr_3').text(arr[1] * $('.item1 #tr-1').text()));
+								break;
 							case "2 cặp":
-							($('.item1 #tr_3').text(arr[2]*$('.item1 #tr-1').text()));
-							break;
+								($('.item1 #tr_3').text(arr[2] * $('.item1 #tr-1').text()));
+								break;
 							case "3 cặp":
-							($('.item1 #tr_3').text(arr[3]*$('.item1 #tr-1').text()));
-							break;
-						}	
+								($('.item1 #tr_3').text(arr[3] * $('.item1 #tr-1').text()));
+								break;
+						}
 					}
 					getPrice($('#tr3 input:checked').val())
 				}
@@ -337,26 +337,26 @@
 			dress($('#tr3 input:checked').val());
 
 			function distance(x) {
-				if(x == "studio"){
+				if (x == "studio") {
 					$('.item1 #tr-2').text(0);
 					$('.item1 #tr-distance').text("Bán kính di chuyển (studio)");
 					$('.item1 #tr_2').text(0);
-				}else{
+				} else {
 					$('.item1 #tr-2').text($('.item1 #tr-1').text())
 					$('.item1 #tr-distance').text("Bán kính di chuyển " + $('#tr2 input:checked').val())
-					function getPrice(x){
+					function getPrice(x) {
 						let arr = [0, 500000, 1000000, 1500000];
-						switch (x){
+						switch (x) {
 							case "25km":
-							($('.item1 #tr_2').text(arr[1]*$('.item1 #tr-1').text()));
-							break;
+								($('.item1 #tr_2').text(arr[1] * $('.item1 #tr-1').text()));
+								break;
 							case "50km":
-							($('.item1 #tr_2').text(arr[2]*$('.item1 #tr-1').text()));
-							break;
+								($('.item1 #tr_2').text(arr[2] * $('.item1 #tr-1').text()));
+								break;
 							case ">50km":
-							($('.item1 #tr_2').text(arr[3]*$('.item1 #tr-1').text()));
-							break;
-						}	
+								($('.item1 #tr_2').text(arr[3] * $('.item1 #tr-1').text()));
+								break;
+						}
 					}
 					getPrice($('#tr2 input:checked').val())
 				}
@@ -364,71 +364,83 @@
 			distance($('#tr2 input:checked').val());
 
 			function makeup(x) {
-				if(x == "none-m"){
+				if (x == "none-m") {
 					$('.item1 #tr-4').text("0")
 					$('.item1 #tr_4').text(0);
-				}else{
+				} else {
 					$('.item1 #tr-4').text($('.item1 #tr-1').text())
-					$('.item1 #tr_4').text(300000*$('.item1 #tr-1').text());
+					$('.item1 #tr_4').text(300000 * $('.item1 #tr-1').text());
 				}
 			}
 			makeup($('#tr4 input:checked').val());
 
 			function flower(x) {
-				if(x == "none-f"){
+				if (x == "none-f") {
 					$('.item1 #tr-5').text("0")
 					$('.item1 #tr_5').text(0);
-				}else{
+				} else {
 					$('.item1 #tr-5').text($('.item1 #tr-1').text())
-					$('.item1 #tr_5').text(350000*$('.item1 #tr-1').text());
+					$('.item1 #tr_5').text(350000 * $('.item1 #tr-1').text());
 				}
 			}
 			flower($('#tr5 input:checked').val());
 
-			function album(x){
-				if(x == "none-a"){
+			function album(x) {
+				if (x == "none-a") {
 					$('.item1 #tr_6').text(0);
-				}else{
+				} else {
 					$('.item1 #tr_6').text(450000);
 				}
 			}
 			album($('#tr6 input:checked').val())
 
-			function pictureframes(x){
-				if(x == "none-p"){
+			function pictureframes(x) {
+				if (x == "none-p") {
 					$('.item1 #tr_7').text(0);
-				}else{
+				} else {
 					$('.item1 #tr_7').text(800000);
 				}
 			}
 			pictureframes($('#tr7 input:checked').val())
 
-			function desktopphotos(x){
-				if(x == "none-de"){
+			function desktopphotos(x) {
+				if (x == "none-de") {
 					$('.item1 #tr_8').text(0);
-				}else{
+				} else {
 					$('.item1 #tr_8').text(500000);
 				}
 			}
 			desktopphotos($('#tr8 input:checked').val())
 
-			function dvd(x){
-				if(x == "none-dv"){
+			function dvd(x) {
+				if (x == "none-dv") {
 					$('.item1 #tr_9').text(0);
-				}else{
+				} else {
 					$('.item1 #tr_9').text(200000);
 				}
 			}
 			dvd($('#tr9 input:checked').val())
 
-			function getSumPrice(){
+			function getSumPrice() {
 				let x = 0;
-				for(i = 1; i<=9; i++){
+				for (i = 1; i <= 9; i++) {
 					x += parseInt($(`.item1 #tr_${i}`).text());
 				}
 				$('.item1 #tr_10').text(x)
 			}
 			getSumPrice()
+
+			// function addCommas(nStr) {
+			// 	nStr += '';
+			// 	var x = nStr.split('.');
+			// 	var x1 = x[0];
+			// 	var x2 = x.length > 1 ? '.' + x[1] : '';
+			// 	var rgx = /(\d+)(\d{3})/;
+			// 	while (rgx.test(x1)) {
+			// 		x1 = x1.replace(rgx, '$1' + ',' + '$2');
+			// 	}
+			// 	return x1 + x2;
+			// }
 		}
 		sumPrice()
 	</script>
