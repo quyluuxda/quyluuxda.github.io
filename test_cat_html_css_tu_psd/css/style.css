@@ -1,0 +1,291 @@
+/* chèn font */
+
+@font-face {
+    font-family: "proxima";
+    src: url('../font/proxima-nova-cufonfonts/ProximaNova-Regular.ttf')
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: "proxima";
+    font-size: 14px;
+    color: #000000;
+}
+
+a {
+    cursor: pointer;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #f8863a!important;
+}
+
+@media(max-width:992px){
+    .navbar-collapse a{
+        text-align: right!important
+    }
+    #login{
+        display: block;
+        padding-bottom: 1rem;
+    }
+    .navbar-collapse{
+        position: absolute;
+        top:56px;
+        right: 1rem;
+    }
+    .navbar-collapse a{
+        color: #ffffff!important;
+    }
+}
+/* navbar */
+
+header {
+    border-bottom: 1px solid #F2F2F2;
+    background-color: #ffffff;
+}
+
+.navbar-brand>span {
+    font-size: 18px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.navbar-collapse a {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.nav-item{
+    padding-left: 2rem;
+}
+/* section1 */
+
+.section1-text1 {
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 72px;
+}
+
+.section1-text2 {
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 32px;
+}
+
+/* section2 */
+
+.section2-text1 {
+    font-size: 18px;
+    line-height: 23px;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+.section2-text2 {
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 63px;
+}
+
+.section2-text3 {
+    font-size: 21px;
+    line-height: 32px;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+.section2-text4 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.section2-text5 {
+    font-size: 16px;
+    line-height: 24px;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+}
+
+.section2-text6 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #540CFA;
+}
+.section2-text6:hover{
+    color: #f8863a;
+}
+/* section4 */
+
+.section4-text1 {
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 50px;
+}
+
+.section4-text2 {
+    font-size: 18px;
+    line-height: 28px;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+a .section4-text3-active,a .section4-text3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.5;
+    border: 1px solid #F2F2F2;
+}
+
+a .section4-text3-active, a .section4-text3:hover {
+    opacity: 1;
+    color: #000000;
+}
+
+#img-style1 {
+    padding-left: 100px;
+    position: relative;
+}
+
+#img-style3 {
+    padding-bottom: 40%;
+}
+
+#img-style2 {
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
+
+/* section5 */
+.section5-text1 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.8
+}
+
+.section5-text2 {
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+.section5-text3 {
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+.column-count {
+    column-count: 2;
+    margin: 0;
+    padding: 0;
+}
+
+@media(max-width:576px){
+    .column-count {
+        column-count: 1;
+    } 
+}
+/* section6 */
+
+.section6-text1 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    mix-blend-mode: normal;
+    opacity: 0.8
+}
+
+.section6-text2 {
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 63px;
+    text-align: center;
+}
+
+.section6-text3 {
+    font-size: 21px;
+    line-height: 32px;
+    text-align: center;
+    mix-blend-mode: normal;
+    opacity: 0.8
+}
+
+footer{
+    font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+color: #000000;
+mix-blend-mode: normal;
+}
+footer a,footer p {
+    opacity: 0.3;
+}
+
+footer a:hover,footer p:hover {
+    opacity: 0.8;
+}
+.img-style3{
+    position: absolute;
+    right: 0%;
+    top: 0;
+    z-index: -1;
+}
+.img-style5{
+    position: absolute;
+    right: 0%;
+    top: 0;
+    z-index: -2;
+}
+
+.img-style4{
+    position: absolute;
+    left: -75%;
+    bottom: -20%;
+    z-index: -1;
+}
+
+@media(max-width:768px){
+    #img-style2{
+        display: none;
+    }
+    #img-style3 {
+        padding-bottom: 0%;
+    }
+    #img-style1 {
+        padding-left: 0px;
+    }
+}
+
+@media(max-width:576px){
+    .section1-text1,.section6-text2,.section2-text2,.section4-text1{
+        font-size: 40px;
+    }
+    .section2-text6{
+        padding-bottom: 2rem;
+    }
+
+}
+.row{
+    padding: 0;
+    margin: 0;
+}
