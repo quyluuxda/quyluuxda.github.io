@@ -37,7 +37,7 @@
 							Dịch vụ
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="service.html">Dịch vụ sẵn có</a>
+							<a class="dropdown-item" href="service.html#section6">Dịch vụ sẵn có</a>
 							<a class="dropdown-item" href="#">Dịch vụ của bạn</a>
 							<a class="dropdown-item" href="service.html#gift">Khuyến mãi</a>
 						</div>
@@ -51,7 +51,7 @@
 						<a class="nav-link" href="../index.html#section4">Bài viết</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="contact.html">Liên hệ</a>
+						<a class="nav-link" href="contact.html#section8">Liên hệ</a>
 					</li>
 				</ul>
 			</div>
@@ -426,7 +426,15 @@
 				for (i = 1; i <= 9; i++) {
 					x += parseInt($(`.item1 #tr_${i}`).text());
 				}
-				$('.item1 #tr_10').text(x)
+				x += '';
+				var s = x.split('.');
+				var s1 = s[0];
+				var s2 = s.length > 1 ? '.' + s[1] : '';
+				var rgx = /(\d+)(\d{3})/;
+				while (rgx.test(s1)) {
+					s1 = s1.replace(rgx, '$1' + ',' + '$2');
+				}
+				$('.item1 #tr_10').text(s1 + s2)
 			}
 			getSumPrice()
 
@@ -443,6 +451,7 @@
 			// }
 		}
 		sumPrice()
+
 	</script>
 </body>
 

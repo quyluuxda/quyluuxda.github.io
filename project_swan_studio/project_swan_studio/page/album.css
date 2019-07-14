@@ -116,3 +116,14 @@
 #more{
     cursor: pointer;
 }
+
+.wrap1 {
+    height: 550px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    background-image: url(../img/HIEN3936_resize-min.jpg);
+}

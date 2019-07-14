@@ -38,7 +38,7 @@
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="#">Dịch vụ sẵn có</a>
-							<a class="dropdown-item" href="service1.html">Dịch vụ của bạn</a>
+							<a class="dropdown-item" href="service1.html#section9">Dịch vụ của bạn</a>
 							<a class="dropdown-item" href="#gift">Khuyến mãi</a>
 						</div>
 					</li>
@@ -51,7 +51,7 @@
 						<a class="nav-link" href="../index.html#section4">Bài viết</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="contact.html">Liên hệ</a>
+						<a class="nav-link" href="contact.html#section8">Liên hệ</a>
 					</li>
 				</ul>
 			</div>
@@ -68,21 +68,21 @@
 					<div class="carousel-item active">
 						<img src="../img/banner2.jpg" class="d-block w-100" alt="banner2">
 						<div class="carousel-caption d-none d-md-block">
-							<h5><a href="service1.html">GÓI DỊCH VỤ CHỈ VỚI 3.990.000 VNĐ</a></h5>
+							<h5><a href="service1.html#section9">GÓI DỊCH VỤ CHỈ VỚI 3.990.000 VNĐ</a></h5>
 							<p>Hãy liên hệ sớm với chúng tôi để nhận được nhiều ưu đãi!</p>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<img src="../img/banner3.jpg" class="d-block w-100" alt="banner3">
 						<div class="carousel-caption d-none d-md-block">
-							<h5><a href="service.html#gift">CHƯƠNG TRÌNH KHUYẾN MẠI THÁNG 6</a></h5>
+							<h5><a href="#gift">CHƯƠNG TRÌNH KHUYẾN MẠI THÁNG 6</a></h5>
 							<p>Hãy liên hệ sớm với chúng tôi để nhận được nhiều ưu đãi!</p>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<img src="../img/banner1.jpg" class="d-block w-100" alt="banner1">
 						<div class="carousel-caption d-none d-md-block">
-							<h5><a href="service1.html">GÓI DỊCH VỤ CHỈ VỚI 3.990.000 VNĐ</a></h5>
+							<h5><a href="service1.html#section9">GÓI DỊCH VỤ CHỈ VỚI 3.990.000 VNĐ</a></h5>
 							<p>Hãy liên hệ sớm với chúng tôi để nhận được nhiều ưu đãi!</p>
 						</div>
 					</div>
@@ -354,6 +354,37 @@
 									<img src="${arr3[i].src}" class="card-img-top" alt="...">
 									<div style="background-color: #ffffff; font-size: 20px" class="p-2 text-center">
 										<span style="text-transform: uppercase"><b>${arr3[i].name}: ${arr3[i].price} VNĐ</b></span>
+									</div>
+									<div style="color: #535353; background-color: #ebebeb" class="card-body">
+										<span style="font-size: 14px" class="card-text d-block">Chụp tại 01 - 02 địa điểm tùy ý
+											trong nội thành Hà Nội (thời gian: 8h-13h hoặc 12-18h</span>
+										<ul style="font-size: 12px" class="card-text px-2">
+											<li>Trang phục trong ngày: 02 váy, 02 vest cao cấp</li>
+											<li>Trang phục tự chọn do Swan tư vấn</li>
+											<li>Hoa cầm tay, lẵng hoa, phụ kiện đi kèm</li>
+											<li>Make up và làm tóc đi kèm</li>
+											<li>01 Album ảnh chất lượng cao size 30x30cm</li>
+											<li>02 Ảnh ép gỗ size 60x90cm</li>
+											<li>02 Ảnh để bàn 15x21cm</li>
+											<li>02 DVD slide show</li>
+											<li>Toàn bộ ảnh gốc đã chụp</li>
+										</ul>
+									</div>
+								</div>
+							</a>
+						</div>`
+						}
+					}
+					if ($('#filter option:selected').val() == "loc") {
+					document.getElementById("row6").innerHTML = "";
+						for (let i = 0; i < n; i++) {
+							document.getElementById("row6").innerHTML +=
+								`<div class="col-md-4 col-sm-6 text-justify">
+							<a>
+								<div class="card card-svc mb-4">
+									<img src="${x[i].src}" class="card-img-top" alt="...">
+									<div style="background-color: #ffffff; font-size: 20px" class="p-2 text-center">
+										<span style="text-transform: uppercase"><b>${x[i].name}: ${x[i].price} VNĐ</b></span>
 									</div>
 									<div style="color: #535353; background-color: #ebebeb" class="card-body">
 										<span style="font-size: 14px" class="card-text d-block">Chụp tại 01 - 02 địa điểm tùy ý

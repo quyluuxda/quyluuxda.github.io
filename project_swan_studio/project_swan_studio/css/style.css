@@ -32,6 +32,12 @@ h4 {
 .carousel-caption a {
     color: #ffffff;
 }
+
+.carousel-caption{
+    right: 0;
+    left: 0;
+    background-color: #3a303047;
+}
 /* phần header */
 
 .navbar {
@@ -194,7 +200,7 @@ section
     background-size: cover;
     position: relative;
     text-align: center;
-    background-image: url(../img/16-131.jpg);
+    background-image: url(../img/img-111.jpg);
 }
 
 .reservation-homepage {
