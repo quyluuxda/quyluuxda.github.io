@@ -127,3 +127,20 @@
     text-align: center;
     background-image: url(../img/HIEN3936_resize-min.jpg);
 }
+
+@media (max-width:992px){
+    section .wrap1{
+        height: 450px;       
+    }
+}
+
+@media (max-width:768px){
+    section .wrap1{
+        height: 400px;       
+    }
+}
+@media (max-width:576px){
+    section .wrap1{
+        height: 300px;       
+    }
+}
