@@ -1,0 +1,26 @@
+{"information" : [
+    {
+        "name": "Robin Huy",
+        "born": 1990,
+        "mail": "huy.@gmail.com",
+        "phone": 123456
+    },
+    {
+        "name": "Trịnh Mạnh",
+        "born": 1990,
+        "mail": "manh.@gmail.com",
+        "phone": 123457
+    },
+    {
+        "name": "Lưu Quý",
+        "born": 1993,
+        "mail": "quy.@gmail.com",
+        "phone": 123458
+    },
+    {
+        "name": "Nguyễn Tuân",
+        "born": 1996,
+        "mail": "tuan.@gmail.com",
+        "phone": 123472
+    }
+]}
