@@ -1,0 +1,11 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "Fake API for testing",
+  "main": "index.js",
+  "scripts": {
+    "json:server": "json-server --watch data.json --static ./"
+  },
+  "author": "",
+  "license": "ISC"
+}

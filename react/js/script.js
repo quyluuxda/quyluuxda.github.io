@@ -114,19 +114,52 @@
 // };
 
 
-window.onload = function (){
-    $.get("https://quyluuxda.github.io/react/data.json", function(data){
-        information = data
-        let x = data.information.length
-        let string = ''
-            for (i = 0; i < x; i++) {
-              string += `<tr>
+window.onload = function () {
+  $.get("data.json", function (data) {
+    information = data
+    let x = data.information.length
+    let string = ''
+    for (i = 0; i < x; i++) {
+      string += `<tr>
               <td id="name">${data.information[i].name}</td>
                 <td id="age">${data.information[i].born}</td>
                 <td id="mail">${data.information[i].mail}</td>
                 <td id="phone">${data.information[i].phone}</td>
-                <td><i class="far fa-edit"> Chỉnh sửa</i> | <i class="far fa-trash-alt"> Xóa</i></td>
+                <td><i class="far fa-edit"> Chỉnh sửa</i> | <button><i onclick="del(${data.information[i].id})" class="far fa-trash-alt"> Xóa</i></button></td>
                 </tr>`
-                $("#information").html(string)}
+      $("#information").html(string)
+    }
+  });
+};
+
+
+$("#post").click(function () {
+  $.post("http://localhost:3000/information",
+    {
+      name: document.getElementById("inputName").value,
+      born: document.getElementById("inputAge").value,
+      mail: document.getElementById("inputEmail").value,
+      phone: document.getElementById("inputPhone").value
+    },
+    function (data, status) {
+      console.log(data)
+
     });
-  };
+});
+
+
+function del(n){
+  $.ajax({
+    url: `http://localhost:3000/information/${n}`,
+    method: 'DELETE',
+    contentType: 'application/json',
+    success: function (result) {
+      // handle success
+    },
+    error: function (request, msg, error) {
+      // handle failure
+    }
+    
+  })
+  location.reload();
+}
