@@ -1,67 +1,11 @@
 {
   "information": [
     {
-      "id": "2",
-      "name": "Trịnh Mạnh",
-      "born": 1990,
-      "mail": "manh.@gmail.com",
-      "phone": 123457
-    },
-    {
-      "id": "4",
-      "name": "Nguyễn Tuân",
-      "born": 1998,
-      "mail": "quynh.@gmail.com",
-      "phone": 123562
-    },
-    {
-      "name": "Nguyễn Ha",
-      "born": 1998,
-      "mail": "quynh.@gmail.com",
-      "phone": 123562,
-      "id": "5"
-    },
-    {
-      "name": "dsfdhs",
-      "id": "FrzdiX5"
-    },
-    {
-      "name": "abc",
-      "id": "ZyNoQiI"
-    },
-    {
-      "name": "abc",
-      "id": "A39d49i"
-    },
-    {
-      "name": "abc",
-      "id": "hnj-v2p"
-    },
-    {
-      "name": "abc",
-      "id": "nDSwKxT"
-    },
-    {
-      "name": "abc",
-      "id": "eoJHrPY"
-    },
-    {
-      "name": "abc",
-      "id": "vbhCBB6"
-    },
-    {
-      "name": "abc",
-      "born": "121432",
-      "mail": "ewrtq",
-      "phone": "",
-      "id": "W7UiEC1"
-    },
-    {
-      "name": "Lê Dương",
-      "born": "2000",
-      "mail": "duong@gmail.com",
-      "phone": "145632",
-      "id": "shWF3Vf"
+      "name": "Robin Huy",
+      "born": "1990",
+      "mail": "huy@gmail.com",
+      "phone": "456321",
+      "id": 2
     }
   ]
 }
