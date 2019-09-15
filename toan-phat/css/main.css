@@ -7541,6 +7541,9 @@ img {
   cursor: pointer;
   color: #ffffff;
   padding: 5px; }
+  @media (max-width: 575px) {
+    .search-form-btn {
+      display: none; } }
   .search-form-btn .fa-search {
     margin-top: -2px;
     display: block; }
@@ -7683,7 +7686,8 @@ header.scroll .main-header {
   font-size: 32px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  color: #0088b7; }
   .btn-menu:focus, .btn-menu:hover {
     text-decoration: none; }
 
@@ -7712,6 +7716,33 @@ header.scroll .main-header {
 
   .social-list > li {
     margin-right: 5px; } }
+.search {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 15px 0 15px; }
+
+.searchTerm {
+  width: 100%;
+  border: none;
+  border-right: none;
+  padding: 5px;
+  border-radius: 2px 0 0 2px;
+  outline: none;
+  color: #000000;
+  font-size: 14px !important; }
+  .searchTerm:focus {
+    color: #000000; }
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: none;
+  background: #ffffff;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+  font-size: 16px; }
+
 .news-letter {
   background: #0088b7;
   padding: 25px 0; }

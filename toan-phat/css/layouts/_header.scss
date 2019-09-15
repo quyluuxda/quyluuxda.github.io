@@ -139,6 +139,9 @@
 	right: 5px;
 	top: 50%;
 	transform: translate(0, -50%);
+	@media(max-width: 575px){
+		display: none;
+	}
 	cursor: pointer;
 	color: $color-white;
 	padding: 5px;
@@ -344,6 +347,7 @@ header.scroll {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	color: $color-blue;
 
 	span {
 	}
@@ -394,3 +398,34 @@ header.scroll {
 
 	
 }
+
+.search {
+    display: flex;
+	margin: 0 auto;
+	padding: 0 15px 0 15px;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: none;
+    border-right: none;
+    padding: 5px;
+    border-radius: 2px 0 0 2px;
+    outline: none;
+	color: #000000;
+	font-size: 14px!important;
+    &:focus{
+        color:#000000;
+    }
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: none;
+    background: $color-white;
+    text-align: center;
+    color: #000000;
+    cursor: pointer;
+    font-size: 16px;
+  }
