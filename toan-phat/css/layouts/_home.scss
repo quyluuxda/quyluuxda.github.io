@@ -409,7 +409,7 @@
 
       &:after {
         border-top: 20px solid transparent;
-        border-right: 20px solid #ffc60c;
+        border-right: 20px solid $color-orange;
         border-bottom: 20px solid transparent;
         top: 50%;
         left: 0;
@@ -418,7 +418,7 @@
 
       &:before {
         border-top: 30px solid transparent;
-        border-right: 30px solid #ffc60c;
+        border-right: 30px solid $color-orange;
         border-bottom: 30px solid transparent;
         top: 50%;
         left: -6px;
@@ -430,7 +430,7 @@
 
       &:after {
         border-top: 20px solid transparent;
-        border-left: 20px solid #ffc60c;
+        border-left: 20px solid $color-orange;
         border-bottom: 20px solid transparent;
         top: 50%;
         right: 0;
@@ -439,7 +439,7 @@
 
       &:before {
         border-top: 30px solid transparent;
-        border-left: 30px solid #ffc60c;
+        border-left: 30px solid $color-orange;
         border-bottom: 30px solid transparent;
         top: 50%;
         right: -6px;

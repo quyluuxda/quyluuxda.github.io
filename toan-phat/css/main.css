@@ -7688,6 +7688,8 @@ header.scroll .main-header {
   justify-content: center;
   align-items: center;
   color: #0088b7; }
+  .btn-menu:hover {
+    color: #f26200; }
   .btn-menu:focus, .btn-menu:hover {
     text-decoration: none; }
 
@@ -8870,14 +8872,14 @@ header.scroll .main-header {
     left: 30px; }
     .home-carousel .triangle-nav-prev:after {
       border-top: 20px solid transparent;
-      border-right: 20px solid #ffc60c;
+      border-right: 20px solid #f26200;
       border-bottom: 20px solid transparent;
       top: 50%;
       left: 0;
       transform: translate(0, -50%); }
     .home-carousel .triangle-nav-prev:before {
       border-top: 30px solid transparent;
-      border-right: 30px solid #ffc60c;
+      border-right: 30px solid #f26200;
       border-bottom: 30px solid transparent;
       top: 50%;
       left: -6px;
@@ -8886,14 +8888,14 @@ header.scroll .main-header {
     right: 30px; }
     .home-carousel .triangle-nav-next:after {
       border-top: 20px solid transparent;
-      border-left: 20px solid #ffc60c;
+      border-left: 20px solid #f26200;
       border-bottom: 20px solid transparent;
       top: 50%;
       right: 0;
       transform: translate(0, -50%); }
     .home-carousel .triangle-nav-next:before {
       border-top: 30px solid transparent;
-      border-left: 30px solid #ffc60c;
+      border-left: 30px solid #f26200;
       border-bottom: 30px solid transparent;
       top: 50%;
       right: -6px;
