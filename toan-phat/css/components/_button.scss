@@ -1,0 +1,248 @@
+.btn {
+	background-color: transparent;
+	color: $color-subbase;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	line-height: 1;
+	font-weight: 600;
+	font-size: $font-size-base;
+
+	&--primary {
+		color: $color-subbase;
+		background-color: $color-yellow;
+		border-radius: 3px;
+		transition: color 0.3s, box-shadow 0.3s;
+
+		&:hover, &:focus {
+			color: $color-subbase;
+			box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.45);
+		}
+	}
+
+	&--outline {
+		color: $color-orange;
+		border: 1px solid $color-orange;
+		transition: color 0.3s, box-shadow 0.3s, background 0.3s;
+
+		&:hover, &:focus {
+			background-color: $color-orange;
+			color: $color-white;
+			box-shadow: 0px 0px 12px 0px rgba(255,255,255,0.6);
+		}
+	}
+
+	&--box-shadow {
+		transition: color 0.3s, background 0.3s, transform 0.3s, box-shadow 0.3s;
+		box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.19);
+
+		&:hover {
+			box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.45);
+			transform: translate(0, -1px);
+		}
+	}
+
+	&--rounded {
+		width: 40px;
+		height: 40px;
+		padding: 0;
+		background-color: $color-yellow;
+		border-radius: 50%;
+		position: relative;
+		color: $color-subbase;
+		transition: box-shadow 0.3s, transform 0.3s;
+
+		span, i {
+		    font-weight: bold;
+		    font-size: 20px;
+		    position: absolute;
+		    top: calc(50% - 1px);
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		}
+
+		&:hover {
+			color: $color-subbase;
+			box-shadow: 0px 0px 6px rgba(0,0,0,0.28);
+			transform: scale(1.05);
+		}
+	}
+
+	&--bg-gray {
+		background-color: #f0f0f0;
+
+		&:hover {
+			color: $color-yellow;
+		}
+	}
+
+	&--full-width {
+		width: 100%;
+	}
+	
+	&--lg {
+		padding: 13.5px 62px;
+	}
+
+	&--md {
+		padding: 8.5px 13px;
+	}
+}
+
+.btn-link {
+	color: $color-light-blue;
+	font-weight: 400;
+	letter-spacing: 0em;
+
+	span {
+		font-size: 16px;
+		vertical-align: middle;
+
+		&.arrow_carrot-right {
+			position: relative;
+			top: -1px;
+		}
+	}
+
+	&:hover {
+		color: $color-orange;
+		text-decoration: none;
+	}
+}
+
+.btn-fixed {
+	position: fixed;
+	right: 22px;
+	bottom: 0;
+	width: 50px;
+	height: 50px;
+	background-color: $color-light-blue;
+	z-index: 99;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	box-shadow: 0px 0px 0px 5px rgb(142, 220, 247);
+	transition: box-shadow 0.3s;
+
+	&--enquiry {
+		bottom: 88px;
+		background-image: url("../images/icons/icon-button-pen.png");
+	}
+
+	&--hotline {
+		bottom: 20px;
+		background-image: url("../images/icons/icon-button-call.png");
+
+		&:hover {
+			.phone-fixed-wrapper {
+				opacity: 1;
+				visibility: visible;
+				transform: translate(0,0);
+			}
+		}
+	}
+
+	&:hover {
+		box-shadow: 0px 0px 0px 5px $color-light-blue;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	@media (max-width: 1199px) {
+		width: 35px;
+		height: 35px;
+		right: 15px;
+
+		&--enquiry {
+			bottom: 65px;
+		}
+
+		&--hotline {
+			bottom: 15px;
+		}
+	}
+}
+
+.phone-fixed-wrapper {
+	position: fixed;
+	bottom: 25px;
+	right: 100px;
+	z-index: 99;
+	background-color: $color-light-blue;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 30px;
+	transform: translate(30px, 0);
+	opacity: 0;
+	visibility: hidden;
+	transition: transform 0.3s, opacity 0.3s, visibility 0.3s;
+	color: white;
+	font-size: 16px;
+	font-weight: 600;
+
+	&:after {
+		content: "";
+		width: 0;
+		height: 0;
+		position: absolute;
+		right: -20px;
+		top: 0;
+		border-top: 17.5px solid transparent;
+		border-left: 20px solid $color-light-blue;
+		border-bottom: 17.5px solid transparent;
+	}
+}
+
+/**
+ * EFFECT RIPPLE CODE
+ */
+.ripple {
+	overflow: hidden;
+	position: relative;
+	transform: translate3d(0, 0, 0);
+}
+
+.ripple-effect{
+	position: absolute;
+	border-radius: 50%;
+	background-color: rgba(255,255,255,0.5);
+	user-select: none;
+	pointer-events: none;
+	padding: 0;
+	margin: 0;
+	opacity: 0.6;
+	transform: translate3d(-50%,-50%,0);
+	z-index: 9;
+}
+.ripple-in-box {
+	overflow: visible !important;
+}
+// end effect ripple
+
+.d-product-btn {
+	padding: 10px 12px;
+
+	&--has-icon {
+		position: relative;
+		padding-right: 28px;
+
+		span {
+			position: absolute;
+			top: 7px;
+			right: 12px;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		span {
+			transition: transform 0.3s;
+		}
+	}
+
+	&[aria-expanded="true"] {
+		span {
+			transform: rotate(180deg);
+		}
+	}
+}
