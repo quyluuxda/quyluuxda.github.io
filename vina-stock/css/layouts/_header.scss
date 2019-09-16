@@ -1,0 +1,187 @@
+$white-color: #ffffff;
+$fz-20px: 20px;
+@mixin box-title {
+  height: 47px;
+  background: linear-gradient(90deg, #007a48 0%, #86c440 100%);
+  line-height: 47px;
+  color: $white-color;
+}
+.container {
+  max-width: 1140px;
+}
+.logo-wrap {
+  margin-top: 80px;
+  .logo_vinaStock {
+    display: flex;
+    .logo_vinaStock1 {
+      padding: 1rem 3rem 0 3rem;
+    }
+  }
+}
+.banner_vinaStock {
+  margin-top: 2rem;
+}
+@media (max-width: 650px) {
+  .logo-wrap {
+    margin-top: 50px;
+    .logo_vinaStock {
+      display: inline;
+      text-align: center;
+      .logo_vinaStock1 {
+        display: inline;
+        text-align: center;
+      }
+    }
+    .banner_vinaStock {
+      margin-top: 0.5rem;
+    }
+    .advertisement-banner {
+      display: none;
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .logo_vinaStock,
+  .banner_vinaStock {
+    padding: 0;
+  }
+}
+.menu-nav {
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.box-title {
+  @include box-title();
+  .container {
+    max-width: 1140px;
+    .login,
+    .register,
+    .about,
+    .about1,
+    .fa-sign-in,
+    .fa-user-plus,
+    .fa-bars {
+      &:hover {
+        color: #e5e5e5;
+      }
+    }
+    .fa-bars {
+      font-size: $fz-20px;
+      cursor: pointer;
+      line-height: 47px;
+    }
+    .fa-twitter,
+    .fa-instagram,
+    .fa-facebook-f,
+    .fa-youtube,
+    .lang {
+      font-size: 16px;
+      line-height: 47px;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+    .toggle-wrap {
+      margin-left: 3rem !important;
+      position: relative;
+    }
+  }
+  .border-title {
+    line-height: 47px;
+    border-left: solid 0.25px $white-color;
+    border-right: solid 0.25px $white-color;
+  }
+}
+
+@media (max-width: 650px) {
+  .box-title {
+    .container {
+      .fa-twitter,
+      .fa-instagram,
+      .fa-facebook-f,
+      .fa-youtube {
+        display: none;
+      }
+    }
+  }
+}
+.fa-sign-in,
+.fa-user-plus,
+.about1 {
+  display: none;
+}
+.border-title1 {
+  line-height: 47px;
+  border-right: solid 0.25px $white-color;
+}
+@media (max-width: 500px) {
+  .about,
+  .login,
+  .register {
+    display: none;
+  }
+  .about1,
+  .fa-sign-in,
+  .fa-user-plus {
+    display: block;
+  }
+}
+
+.q-form-list {
+  background-color: #ffffff;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  padding: 1rem 0;
+  width: 290px;
+  border: 1px solid #cccccc;
+  .q-ul {
+    &:hover .q-li{
+      display: block;
+    }
+    .q-ul-title {
+      padding: 0 1rem;
+      line-height: 40px;
+      background: #d5d2d2;
+      &:hover {
+        opacity: 0.6;
+      }
+      p {
+        width: 270px;
+        color: #00421c;
+        mix-blend-mode: hard-light;
+        font-family: "Oswald", sans-serif;
+        font-size: 15px;
+      }
+      button {
+        width: 20px;
+        height: 40px;
+      }
+      .fa-plus {
+        display: block;
+        color: #00421c;
+        mix-blend-mode: hard-light;
+      }
+      .fa-minus {
+        display: none;
+      }
+    }
+    .q-li {
+      display: none;
+      padding: 0 1.5rem;
+      line-height: 30px;
+      a {
+        color: #464646;
+        &:hover {
+          color: #00421c;
+          mix-blend-mode: hard-light;
+        }
+      }
+    }
+  }
+}
