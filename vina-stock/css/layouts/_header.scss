@@ -141,6 +141,18 @@ $fz-20px: 20px;
   width: 290px;
   border: 1px solid #cccccc;
   .q-ul {
+    .q-li {
+      display: none;
+      padding: 0 1.5rem;
+      line-height: 30px;
+      a {
+        color: #464646;
+        &:hover {
+          color: #00421c;
+          mix-blend-mode: hard-light;
+        }
+      }
+    }
     &:hover .q-li{
       display: block;
     }
@@ -169,18 +181,6 @@ $fz-20px: 20px;
       }
       .fa-minus {
         display: none;
-      }
-    }
-    .q-li {
-      display: none;
-      padding: 0 1.5rem;
-      line-height: 30px;
-      a {
-        color: #464646;
-        &:hover {
-          color: #00421c;
-          mix-blend-mode: hard-light;
-        }
       }
     }
   }
