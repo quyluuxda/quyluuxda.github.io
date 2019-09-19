@@ -1,0 +1,92 @@
+.exampleModalCenter {
+    margin-right: 0!important;
+  .modal-content {
+    border-radius: 0;
+    .modal-header {
+      border: none;
+      padding: 4px 8px;
+    }
+    .modal-body {
+      padding: 0 40px 40px;
+      button{
+          &:hover{
+              opacity: 0.6;
+              transition: all 0.5s linear;
+          }
+      }
+      .login-register-title {
+        display: flex;
+        justify-content: space-around;
+        button {
+          padding: 6px 15px;
+          font-size: $fs15;
+          color: $c-green;
+          font-family: "Oswald", sans-serif;
+          &:first-child {
+            border-bottom: 2px solid $c-green;
+          }
+        }
+        .restore-password{
+            font-size: $fs15;
+            color: $c-green;
+            font-family: "Oswald", sans-serif; 
+        }
+      }
+      .form-login {
+        position: relative;
+        margin-top: 30px;
+        font-size: $fs14;
+        font-family: $f1;
+        .form-control {
+          font-size: $fs14;
+          border-radius: 0;
+          background-color: rgba(196, 196, 196, 0.34);
+          border: none;
+          margin: 0.5rem 0;
+          &:focus {
+            box-shadow: none;
+          }
+        }
+        .q-submit,.q-restore {
+            width: 100%;
+            background-color: $c-red;
+            color: $white-color;
+            font-size: $fs14;
+            padding: 7px 0;
+            margin-bottom: 1rem;
+        }
+        .forgot-password,.forgot-login {
+          color: $c-green;
+        }
+        .forgot-register{
+            color: $c-red;
+        }
+        .quick-login{
+            display: flex;
+            justify-content:start;
+            button{
+                font-size: $fs15;
+                font-weight: bold;
+                color: $white-color;
+                padding: 8px 15px;
+                border-radius: 3px;
+            }
+            .btn-fb{
+                background-color: #4359ac;
+                margin-right: 1rem;
+            }
+            .btn-gg{
+                background-color: $c-red;
+            }
+        }
+        .item-shares{
+            position: absolute;
+            bottom: -80px;
+            left: 100%;
+            z-index: 99;
+            width: 100%;
+        }
+      }
+    }
+  }
+}

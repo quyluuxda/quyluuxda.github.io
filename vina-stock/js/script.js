@@ -489,6 +489,7 @@ $(document).ready(function() {
 	$('.q-form-list').slideUp(); /*ẩn nội dung*/
 
 	$('.fa-bars').on('click', function(event) {
+        $(this).toggleClass('fa-times fa-minus show');
 		event.preventDefault();
         // đóng/ mở
 		// $('.noi-dung').slideUp(); /*ẩn nội dung*/
@@ -501,24 +502,3 @@ $(document).ready(function() {
     
 })
 
-
-// $(document).ready(function() {
-// 	$('.q-li').slideUp(); /*ẩn nội dung*/
-
-// 	$('.q-ul').on('click', function(event) {
-//         // if($('.fa-plus').css("display", "block")){
-//         //     $('.fa-plus').css("display", "none")
-//         //     $(".fa-minus").css("display", "block")
-//         // }
-// 		// ngăn chặn mặc định
-// 		event.preventDefault();
-//         // đóng/ mở
-// 		// $('.noi-dung').slideUp(); /*ẩn nội dung*/
-// 		$(this).next().slideToggle();
-
-// 		// $(this).offset().top lấy vị trí của phần tử this
-
-// 		$('html, body').animate({scrollTop:$(this).offset().top},400); 
-//     })
-    
-// })

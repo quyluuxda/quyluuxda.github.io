@@ -7,9 +7,6 @@
       font-family: 'Oswald', sans-serif;
     }
     a{
-      &:hover{
-        opacity: 0.6;
-      }
       i{
         font-size: 20px;
       }
@@ -26,5 +23,11 @@
     background: #057535;
     &:hover{
         opacity: 0.6;
+    }
+  }
+
+  @media (max-width:991px){
+    .q-link, .q-contact, .q-info {
+      margin-bottom: 1.5rem;
     }
   }

@@ -31,23 +31,22 @@
         <header>
             <div class="container-fluid box-title menu-nav px-0">
                 <div class="container d-flex">
-                    <a href="">
-                        <div class="px-3 about">Về Vinastock</div>
-                        <p class="pr-2 border-title1 about1">About us</p>
-                    </a>
-                    <a href="">
-                        <div class="px-3 login border-title">Đăng nhập</div><i
-                            class="px-2 border-title1 fal fa-sign-in"></i>
-                    </a>
-                    <a href="">
-                        <div class="px-3 register">Đăng ký</div><i class="px-2
-                            border-title1 fal fa-user-plus"></i>
-                    </a>
-                    <div class="ml-auto pr-5">
-                        <i class="fab fa-twitter px-2"></i>
-                        <i class="fab fa-instagram px-2"></i>
-                        <i class="fab fa-youtube px-2"></i>
-                        <i class="fab fa-facebook-f px-2"></i>
+
+                    <button type="button" class="px-3 about"><a href="">Về Vinastock</a></button>
+                    <p class="pr-2 border-title1 about1">About us</p>
+  
+                    <button type="button" class="px-3 login border-title" data-toggle="modal" data-target="#exampleModalCenter1">Đăng nhập</button>
+                    <i class="px-2 border-title1 fal fa-sign-in"></i>
+
+
+                    <button type="button" class="px-3 register">Đăng ký</button>
+                    <i class="px-2 border-title1 fal fa-user-plus"></i>
+
+                    <div class="ml-auto social-icon-header pr-5">
+                        <a class="icon-twitter" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="icon-instagram" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="icon-youtube" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="icon-facebook" href=""><i class="fab fa-facebook-f"></i></a>
                     </div>
                     <div class="ml-auto toggle-wrap">
                         <img class="img-fluid lang mb-2"
@@ -177,7 +176,7 @@
                                         text-center">
                                         <span>CHỨNG KHOÁN CƠ BẢN</span>
                                     </div>
-                                    <div class="px-3 pb-3">
+                                    <div class="pad-box pb-3">
                                         <a href="">
                                             <p>Kiến thức về cổ phiếu, trái
                                                 phiếu, CKPS</p>
@@ -221,7 +220,7 @@
                                         text-center">
                                         <span>CÁC PHƯƠNG PHÁP ĐỊNH GIÁ CỔ PHIẾU</span>
                                     </div>
-                                    <div class="px-3 pb-3">
+                                    <div class="pad-box pb-3">
                                         <a href="">
                                             <p>Phương pháp P/E</p>
                                         </a>
@@ -262,7 +261,7 @@
                                         text-center">
                                         <span>TIÊU CHÍ LỰA CHỌN CỔ PHIẾU</span>
                                     </div>
-                                    <div class="px-3 pb-3">
+                                    <div class="pad-box pb-3">
                                         <a href="">
                                             <p>Theo Buffett</p>
                                         </a>
@@ -340,13 +339,19 @@
                                                 </a>
                                                 <p class="card-text"><small
                                                         class="text-muted">22/08/2019</small>
-                                                    <p class="card-text">Ngoại
+                                                    <p class="card-content">Ngoại
                                                         trừ VN30-Index ra thì
                                                         các chỉ số thị trường
                                                         nhanh
                                                         chóng vượt mốc tham
                                                         chiếu trở lại và kết
-                                                        phiên trong...
+                                                        phiên trong. Ngoại
+                                                        trừ VN30-Index ra thì
+                                                        các chỉ số thị trường
+                                                        nhanh
+                                                        chóng vượt mốc tham
+                                                        chiếu trở lại và kết
+                                                        phiên trong.
                                                     </p>
                                                 </p>
                                             </div>
@@ -374,12 +379,18 @@
                                                 </a>
                                                 <p class="card-text"><small
                                                         class="text-muted">22/08/2019</small>
-                                                    <p class="card-text">Mới
+                                                    <p class="card-content">Mới
                                                         đây, CTCP Chứng khoán TP
                                                         HCM (HSC), đã đưa ra dự
                                                         báo về kỳ đảo danh mục
                                                         quý 3/2019 của quỹ
-                                                        VNM...
+                                                        VNM.
+                                                        Mới
+                                                        đây, CTCP Chứng khoán TP
+                                                        HCM (HSC), đã đưa ra dự
+                                                        báo về kỳ đảo danh mục
+                                                        quý 3/2019 của quỹ
+                                                        VNM.
                                                     </p>
                                                 </p>
                                             </div>
@@ -408,7 +419,7 @@
                                                 </a>
                                                 <p class="card-text"><small
                                                         class="text-muted">22/08/2019</small>
-                                                    <p class="card-text">Trong
+                                                    <p class="card-content">Trong
                                                         tuần giao dịch vừa qua
                                                         (12-16/08/2019), nhiều
                                                         cổ
@@ -526,7 +537,7 @@
                 <div class="footer-wrap py-4">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 q-info">
                                 <p class="text1 mb-3">CÔNG TY CỔ PHẦN VINASTOCK</p>
                                 <p>Địa chỉ: Tầng 6, Toà nhà Việt á, Số 9 Duy Tân
                                     - Phường Dịch Vọng Hậu - Quận Cầu Giấy - Hà
@@ -543,9 +554,9 @@
                                 <p>Số ĐKKD: Số ĐKKD: 0108297282 do Sở KHĐT TP Hà
                                     Nội cấp ngày 06/06/2018</p>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 ">
                                 <div class="row">
-                                    <div class="col-lg-5">
+                                    <div class="col-lg-5 q-link">
                                         <p class="text1 mb-3">LIÊN KẾT TỚI</p>
                                         <a href="">
                                             <p>Điều khoản sử dụng</p>
@@ -556,27 +567,27 @@
                                         <img class="mt-3"
                                             src="images/dathongbao.png" alt="">
                                     </div>
-                                    <div class="col-lg-7">
-                                        <p class="text1 mb-3">LIÊN HỆ VỚI CHÚNG
-                                            TÔI</p>
-                                        <a href="">
-                                            <i class="fab fa-twitter px-2"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="fab fa-instagram px-2"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="fab fa-youtube px-2"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="fab fa-facebook-f px-2"></i>
-                                        </a>
+                                    <div class="col-lg-7 q-contact">
+                                        <p class="text1 mb-3">LIÊN HỆ VỚI CHÚNG TÔI</p>
+                                        <div class="social-icon-footer">
+                                            <a class="icon-twitter" href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                            <a class="icon-instagram" href="#">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                            <a class="icon-youtube" href="#">
+                                                <i class="fab fa-youtube"></i>
+                                            </a>
+                                            <a class="icon-facebook" href="#">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </div>
                                         <div>
                                             <div class="search mt-4">
                                                 <input type="text"
                                                     class="searchTerm"
-                                                    placeholder="Nhập email nhận
-                                                    bản tin">
+                                                    placeholder="Nhập email nhận bản tin">
                                                 <button type="submit"
                                                     class="searchButton1">
                                                     <span>OK</span>
@@ -591,6 +602,88 @@
                     </div>
                 </div>
             </footer>
+      
+      <!-- Modal đăng nhập -->
+      <div class="modal fade exampleModalCenter" id="exampleModalCenter1" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="login-register-title">
+                                    <button type="button">Đăng nhập</button>
+                                    <button type="button">Đăng ký</button>
+                                </div>
+                                <div class="form-login">
+                                     <form>
+                                        <div class="">
+                                            <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="E-mail hoặc số điện thoại">
+                                        </div>
+                                        <div class="form-group">
+                                          <input type="password" class="form-control" id="inputPassword1" placeholder="Mật khẩu">
+                                        </div>
+                                        <button type="submit" class="q-submit">Đăng nhập</button>    
+                                        <button type="button" class="forgot-password mb-2" data-dismiss="modal"  data-toggle="modal" data-target="#exampleModalCenter3">Quên mật khẩu ?</button>
+                                        <p>Đăng nhập nhanh với</p>
+                                        <div class="quick-login mt-3">
+                                            <button type="button" class="btn-fb"><i class="fab fa-facebook-square"> </i> Facebook</button>
+                                            <button type="button" class="btn-gg"><i class="fab fa-google"> </i> Gmail</button>
+                                        </div>                                         
+                                    </form>
+                                    <div class="item-shares">
+                                        <img src="images/item-shares.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                          
+                    </div>        
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal quên mật khẩu -->
+      <div class="modal fade exampleModalCenter" id="exampleModalCenter3" tabindex="-1" role="dialog"  aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="login-register-title">
+                                        <p class="restore-password">Nhập email của bạn để tiến hành khôi phục mật khẩu</p>
+                                    </div>
+                                    <div class="form-login">
+                                         <form>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" id="inputEmail2" aria-describedby="emailHelp" placeholder="E-mail">
+                                            </div>
+                                            <button type="submit" class="q-restore">Khôi phục mật khẩu</button>    
+                                            <button type="button" class="forgot-login mb-2">Đăng nhập</button><br/>
+                                            <button type="button" class="forgot-register">Đăng ký tài khoản mới</button>                                       
+                                        </form>
+                                        <div class="item-shares">
+                                            <img src="images/item-shares.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                          
+                        </div>        
+                </div>
+              </div>
+            </div>
+          </div>
             <!-- end counter -->
             <!-- <div id="fb-root"></div>
         <script type="text/javascript">
