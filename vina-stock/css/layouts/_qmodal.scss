@@ -8,6 +8,9 @@
     }
     .modal-body {
       padding: 0 40px 40px;
+      @media (max-width:575px) {
+        padding: 0 10px 40px;
+      }
       button{
           &:hover{
               opacity: 0.6;
@@ -22,9 +25,9 @@
           font-size: $fs15;
           color: $c-green;
           font-family: "Oswald", sans-serif;
-          &:first-child {
-            border-bottom: 2px solid $c-green;
-          }
+        }
+        .active {
+          border-bottom: 2px solid $c-green;
         }
         .restore-password{
             font-size: $fs15;
@@ -86,7 +89,18 @@
             z-index: 99;
             width: 100%;
         }
+        .confirmRegister{
+          font-size: 12px;
+          text-align: justify;
+          span{
+            color: $c-green;
+          }
+        }
       }
     }
   }
+}
+
+.exampleModalCenter{
+  padding-right: 0!important;
 }

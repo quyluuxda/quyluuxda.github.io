@@ -1,4 +1,6 @@
-
+.body-bgc{
+  background: #f5f1f1;
+}
 .details{
     background: $white-color;
     padding-top: 1rem;
@@ -15,7 +17,7 @@
     .details-title{
         font-size: 15px;
         span{
-          font-family: 'Oswald', sans-serif;
+          font-family: $f3;
         }
     }
     p{
@@ -44,40 +46,62 @@
 
 .search {
     display: flex;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  .searchTerm {
     width: 100%;
-    border: none;
-    border-right: none;
-    padding: 5px;
-    border-radius: 2px 0 0 2px;
-    outline: none;
-    color: #000000;
-    &:focus{
-        color:#000000;
+    margin: 0 auto;
+    .searchTerm {
+      width: 100%;
+      border: none;
+      border-right: none;
+      padding: 5px;
+      border-radius: 2px 0 0 2px;
+      outline: none;
+      color: #000000;
+      &:focus{
+          color:#000000;
+      }
+    }
+    
+    .searchButton {
+      width: 40px;
+      height: 36px;
+      border: none;
+      background: $white-color;
+      text-align: center;
+      color: #000000;
+      cursor: pointer;
+      font-size: 16px;
     }
   }
   
-  .searchButton {
-    width: 40px;
-    height: 36px;
-    border: none;
-    background: $white-color;
-    text-align: center;
-    color: #000000;
-    cursor: pointer;
-    font-size: 16px;
+.q-search-area{
+  .img-search{
+    img{
+      width: 100%;
+    }
+    @media (max-width:575px) {
+      display: none;
+    }
   }
+}
+
+.q-search-area2{
+  display: none
+}
+@media (max-width:575px){
+  .q-search-area2{
+    display: block;
+  }
+  .q-search-area1{
+    display: none;
+  }
+}
 .new-details{
   background: $white-color;
   .new-title{
     font-size: 21px;
     color: #00421C;
     mix-blend-mode: hard-light;
-    font-family: 'Oswald', sans-serif;
+    font-family: $f3;
   }
   .card-title{
     font-style: normal;
@@ -86,7 +110,7 @@
     color: #000000;
   }
   hr{
-    margin: 0.7rem 0;
+    margin: 0.5rem 0;
   }
   .row{
     .card-img{

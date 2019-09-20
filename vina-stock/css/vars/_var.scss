@@ -1,8 +1,13 @@
 $f1: 'Roboto', sans-serif;
 $f2: 'Arial';
+$f3: 'Oswald', sans-serif;
 
-$fs15:15px;
+$fs12:12px;
 $fs14:14px;
+$fs15:15px;
+$fs18:18px;
+$fs20:20px;
+$fs24:24px;
 
 $c1: #000;
 $c2: #999;
@@ -261,7 +266,7 @@ $media:
         img{
             max-width: 100%;
             height: auto !important;
-            margin: 10px auto;
+            // margin: 10px auto;
             object_fit: initial;
             // &.aligncenter{
             //     display: block;
